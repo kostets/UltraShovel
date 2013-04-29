@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<uiframe name="Shovel AI Alarms [Ctrl+F4]" class="alarmseng" x="0" y="0" width="500" height="250" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>
+	<labelbox name="alarms_box" rect="20 45 460 115"/>	
+	<text name="ReportAlarm" caption="%s" param1="ra" fontname="white_13_ol" rect="30 60 10 10" alignx="left" aligny="top"/>
+	<text name="InventoryAlarm" caption="%s" param1="ia" fontname="white_13_ol" rect="30 85 10 10" alignx="left" aligny="top"/>	
+	<text name="DeadAlarm" caption="%s" param1="da" fontname="white_13_ol" rect="30 110 10 10" alignx="left" aligny="top"/>
+	<text name="name1" caption="%s" param1="n1" fontname="itemlistboxoption_feso" rect="50 135 10 10" alignx="left" aligny="top"/>
+	<text name="name2" caption="%s" param1="n2" fontname="itemlistboxoption_feso" rect="200 135 10 10" alignx="left" aligny="top"/>
+	<text name="name3" caption="%s" param1="n3" fontname="itemlistboxoption_feso" rect="350 135 10 10" alignx="left" aligny="top"/>
+	<checkbox name="RA" rect="270 60 10 10" SelectScp="Interface.SetSettings('check', 'ReportAlarm')"/>
+	<checkbox name="IA" rect="270 85 10 10" SelectScp="Interface.SetSettings('check', 'InventoryAlarm')"/>
+	<checkbox name="DeadAlarmChar1" rect="30 135 10 10" SelectScp="Interface.SetSettings('check', 'DeadAlarmChar1')"/>
+	<checkbox name="DeadAlarmChar2" rect="180 135 10 10" SelectScp="Interface.SetSettings('check', 'DeadAlarmChar2')"/>
+	<checkbox name="DeadAlarmChar3" rect="330 135 10 10" SelectScp="Interface.SetSettings('check', 'DeadAlarmChar3')"/>
+	<edit name="ReportAlarmSound" rect="300 59 130 20"/>
+	<edit name="InventoryAlarmSound" rect="300 84 130 20"/>
+	<edit name="DeadAlarmSound" rect="300 109 130 20"/>
+	<text name="format1" caption="mp3" fontname="white_13_ol" rect="437 62 10 10" alignx="left" aligny="top"/>
+	<text name="format2" caption="mp3" fontname="white_13_ol" rect="437 87 10 10" alignx="left" aligny="top"/>	
+	<text name="format3" caption="mp3" fontname="white_13_ol" rect="437 112 10 10" alignx="left" aligny="top"/>
+	<button name="Save" caption="Save sounds" rect="350 170 130 24" LBtnUpScp="Interface.SetSettings('savesounds')"/>	
+	<button name="back" caption="Back" rect="350 210 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>		
+	<tooltip name="back_tip" parent="back" caption="Return to the main menu" fontname="sandyellow_12_ol" width="256"/>
+	
+	<text name="useSimpleAlarmText" caption="%s" param1="sa" fontname="white_13_ol" rect="50 170 10 10" alignx="left" aligny="top"/>
+	<text name="useSimpleAlarmText2" caption="%s" param1="sa2" fontname="white_13_ol" rect="50 195 10 10" alignx="left" aligny="top"/>
+	<checkbox name="usa" rect="30 170 10 10" SelectScp="Interface.SetSettings('check', 'UseSimpleAlarm')"/>
+</uiframe>

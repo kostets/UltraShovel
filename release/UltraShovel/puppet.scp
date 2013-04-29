@@ -1,0 +1,291 @@
+func SCR_PUPPET_TS_KEEP(self)
+{
+	sleep(100);
+	// start log
+	AiLog('SCR_PUPPET_TS_KEEP : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);
+	// Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// SUBHEALING Healing Check
+		/*if('ChangeTS' == SCR_AI_LIB_SUBHEALING(self, selfAi)){
+			return;
+		}*/
+		// Keep Position Check
+		SCR_AI_LIB_KEEPPOSITION(selfAi);
+		// Main Sleep
+		sleep(100);
+	}
+}
+
+func SCR_PUPPET_TS_KEEP_BATTLE(self)
+{
+	var selfAi = GetAiActor(self);
+	ChangeTacticsAi(selfAi, 'TS_KEEP');
+	return;
+}
+
+func SCR_PUPPET_TS_USER_SKILL(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_USER_SKILL : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);	
+	//Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// Skill Using Check
+		if('ChangeTS' == SCR_AI_LIB_SKILLUSING(selfAi, prevTS)){
+			return;
+		}
+		// Main Sleep
+		sleep(100);
+	}
+}
+
+func SCR_PUPPET_TS_NONE(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_NONE : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);	
+	//Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Main Sleep
+		sleep(1000);
+	}
+}
+
+func SCR_PUPPET_TS_BATTLE_NOMINATE(self)
+{
+	var selfAi = GetAiActor(self);
+	ChangeTacticsAi(selfAi, 'TS_NONE');
+	return;
+}
+
+func SCR_PUPPET_TS_ASSAULT(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_ASSAULT : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);	
+	//Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// SUBHEALING Healing Check
+		/*if('ChangeTS' == SCR_AI_LIB_SUBHEALING(self, selfAi)){
+			return;
+		}*/
+	// Move
+	AssaultDestMoveTo(selfAi);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// SUBHEALING Healing Check
+		/*if('ChangeTS' == SCR_AI_LIB_SUBHEALING(self, selfAi)){
+			return;
+		}*/
+		// No Arrival Check (PUPPET Only)
+		// Main Sleep
+		sleep(1000);
+	}
+}
+
+func SCR_PUPPET_TS_ASSAULT_BATTLE(self)
+{
+	var selfAi = GetAiActor(self);
+	ChangeTacticsAi(selfAi, 'TS_ASSAULT');
+	return;
+}
+
+func SCR_PUPPET_TS_HOLD(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_HOLD : Start!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);
+	// Hold
+	SCR_AI_LIB_HOLD(selfAi);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// SUBHEALING Healing Check
+		/*if('ChangeTS' == SCR_AI_LIB_SUBHEALING(self, selfAi)){
+			return;
+		}*/
+		// Main Sleep
+		sleep(1000);
+	}
+}
+
+func SCR_PUPPET_TS_HOLD_BATTLE(self)
+{
+	var selfAi = GetAiActor(self);
+	ChangeTacticsAi(selfAi, 'TS_HOLD');
+	return;
+}
+
+func SCR_PUPPET_TS_HARVEST(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_HARVEST : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);
+	//Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Near Item
+		if('ChangeTS' == SCR_AI_LIB_NEARITEM(selfAi)){
+			return;
+		}
+	// Move
+	HarvestDestMoveTo(selfAi);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Near Item
+		if('ChangeTS' == SCR_AI_LIB_NEARITEM(selfAi)){
+			return;
+		}
+		// Arrival Check
+		if(IsNearFromHarvestDestPosition(selfAi, 100) == 'YES'){
+			ChangeTacticsAi(selfAi, 'TS_NONE');
+			return;
+		}
+		// Main Sleep
+		sleep(100);
+	}
+}
+
+func SCR_PUPPET_TS_HARVEST_PICK(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_HARVEST_PICK : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Target Item Check
+		if('ChangeTS_Prev' == SCR_AI_LIB_TARGETITEM(selfAi)){
+			ChangeTacticsAi(selfAi, 'TS_HARVEST');
+			return;
+		}
+		// Main Sleep		
+		sleep(500);
+	}
+}
+
+func SCR_PUPPET_TS_PICK_ITEM(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_PICK_ITEM : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);
+	//Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Target Item Check
+		if('ChangeTS_Prev' == SCR_AI_LIB_TARGETITEM(selfAi)){
+			ChangeTacticsAi(selfAi, 'TS_NONE');
+			return;
+		}
+		// Main Sleep	
+		sleep(500);
+	}
+}
+
+func SCR_PUPPET_TS_MOVE(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_MOVE : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);	
+	// Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Arrival 
+		if(IsNearFromMoveDestPosition(selfAi, 100) == 'YES'){
+			ChangeTacticsAi(selfAi, 'TS_NONE');
+			return;
+		}
+		// Main Sleep
+		sleep(100);
+	}
+}
+
+func SCR_PUPPET_TS_MOVE_PREVTS(self)
+{
+	sleep(100);
+	// start log
+	AiLog('PUPPET_TS_MOVE : Start!!!');
+	// declare variables
+	var selfAi = GetAiActor(self);
+	var prevTS = GetPrevTS(selfAi);	
+	// Hold Check
+	SCR_AI_LIB_UNHOLD(selfAi, prevTS);
+	// Main Loop
+	while(1){
+		// User Skill Check
+		if('ChangeTS' == SCR_AI_LIB_USERSKILL(selfAi)){
+			return;
+		}
+		// Arrival 
+		if(IsNearFromMoveDestPosition(selfAi, 100) == 'YES'){
+			ClearAiTarget(selfAi);
+			ChangeTacticsAi(selfAi, prevTS);
+			return;
+		}
+		// Main Sleep
+		sleep(100);
+	}
+}

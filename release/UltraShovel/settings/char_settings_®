@@ -1,0 +1,8 @@
+UseBullets = false
+BulletsID = 21116
+NumPadButton = 0
+AutoAttack = true
+HPlevel = 50
+MPlevel = 50
+WeaponIndex = 1
+StanceIndex = 1

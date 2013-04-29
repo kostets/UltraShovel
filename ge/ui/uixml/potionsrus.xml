@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Авто банки [Ctrl + F3]" class="potionsrus" x="0" y="0" width="470" height="460" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>	
+	<labelbox name="character1_box" rect="20 45 430 115"/>				
+	<text name="name1" caption="[%s]" param1="n1" fontname="itemlistboxoption_feso" rect="40 60 10 10" alignx="left" aligny="top"/>
+	<text name="hp1" caption="%s" param1="h1" fontname="sandyellow_12_ol" rect="60 85 10 10" alignx="left" aligny="top"/>
+	<text name="mp1" caption="%s" param1="m1" fontname="sandyellow_12_ol" rect="60 110 10 10" alignx="left" aligny="top"/>
+	<text name="sliderhp1" caption="[%s]" param1="sh1" fontname="white_13_ol" rect="215 55 10 10" alignx="left" aligny="top"/>
+	<text name="slidermp1" caption="[%s]" param1="sm1" fontname="white_13_ol" rect="215 95 10 10" alignx="left" aligny="top"/>
+	<text name="HPL1" caption="%s" param1="hl1"	fontname="white_13_ol" rect="355 90 10 10" alignx="left" aligny="top"/>
+	<text name="MPL1" caption="%s" param1="ml1"	fontname="white_13_ol" rect="355 130 10 10" alignx="left" aligny="top"/>		
+	<checkbox name="useHP1" rect="40 85 10 10" SelectScp="Interface.ChangePotionsUse('hp', 1)" 	fontname="sandyellow_12_ol"/>
+	<checkbox name="useMP1" rect="40 110 10 10" SelectScp="Interface.ChangePotionsUse('mp', 1)"	fontname="sandyellow_12_ol"/>		
+	<slidebar name="HPlevel1" rect="205 70 230 20"  maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('hp', 1)"/>
+	<slidebar name="MPlevel1" rect="205 110 230 20" maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('mp', 1)"/>
+	<labelbox name="character2_box" rect="20 175 430 115"/>				
+	<text name="name2" caption="[%s]" param1="n2" fontname="itemlistboxoption_feso" rect="40 190 10 10" alignx="left" aligny="top"/>
+	<text name="hp2" caption="%s" param1="h2" fontname="sandyellow_12_ol" rect="60 215 10 10" alignx="left" aligny="top"/>
+	<text name="mp2" caption="%s" param1="m2" fontname="sandyellow_12_ol" rect="60 240 10 10" alignx="left" aligny="top"/>
+	<text name="sliderhp2" caption="[%s]" param1="sh2" fontname="white_13_ol" rect="215 185 10 10" alignx="left" aligny="top"/>
+	<text name="slidermp2" caption="[%s]" param1="sm2" fontname="white_13_ol" rect="215 225 10 10" alignx="left" aligny="top"/>
+	<text name="HPL2" caption="%s" param1="hl2"	fontname="white_13_ol" rect="355 220 10 10" alignx="left" aligny="top"/>
+	<text name="MPL2" caption="%s" param1="ml2"	fontname="white_13_ol" rect="355 260 10 10" alignx="left" aligny="top"/>	
+	<checkbox name="useHP2" rect="40 215 10 10" SelectScp="Interface.ChangePotionsUse('hp', 2)"	fontname="sandyellow_12_ol"/>
+	<checkbox name="useMP2" rect="40 240 10 10" SelectScp="Interface.ChangePotionsUse('mp', 2)"	fontname="sandyellow_12_ol"/>		
+	<slidebar name="HPlevel2" rect="205 200 230 20" maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('hp', 2)"/>
+	<slidebar name="MPlevel2" rect="205 240 230 20" maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('mp', 2)"/>
+	<labelbox name="character3_box" rect="20 305 430 115"/>				
+	<text name="name3" caption="[%s]" param1="n3" fontname="itemlistboxoption_feso" rect="40 320 10 10" alignx="left" aligny="top"/>
+	<text name="hp3" caption="%s" param1="h3" fontname="sandyellow_12_ol" rect="60 345 10 10" alignx="left" aligny="top"/>
+	<text name="mp3" caption="%s" param1="m3" fontname="sandyellow_12_ol" rect="60 370 10 10" alignx="left" aligny="top"/>
+	<text name="sliderhp3" caption="[%s]" param1="sh3" fontname="white_13_ol" rect="215 315 10 10" alignx="left" aligny="top"/>
+	<text name="slidermp3" caption="[%s]" param1="sm3" fontname="white_13_ol" rect="215 355 10 10" alignx="left" aligny="top"/>
+	<text name="HPL3" caption="%s" param1="hl3" fontname="white_13_ol" rect="355 350 10 10" alignx="left" aligny="top"/>
+	<text name="MPL3" caption="%s" param1="ml3"	fontname="white_13_ol" rect="355 390 10 10" alignx="left" aligny="top"/>	
+	<checkbox name="useHP3" rect="40 345 10 10" SelectScp="Interface.ChangePotionsUse('hp', 3)" fontname="sandyellow_12_ol"/>
+	<checkbox name="useMP3" rect="40 370 10 10" SelectScp="Interface.ChangePotionsUse('mp', 3)" fontname="sandyellow_12_ol"/>		
+	<slidebar name="HPlevel3" rect="205 330 230 20" maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('hp', 3)"/>
+	<slidebar name="MPlevel3" rect="205 370 230 20" maxlevel="99" defaultlevel="50" SelectScp="Interface.Slide('mp', 3)"/>		
+	<button name="enable_all" caption="Включить всё" rect="20 425 110 24" LBtnUpScp="Interface.SwitchAll('on', 'potions')"/>
+	<button name="disable_all" caption="Выключить всё" rect="135 425 110 24" LBtnUpScp="Interface.SwitchAll('off', 'potions')"/>
+	<button name="level_to_top" caption="Уровни вверх" rect="250 425 110 24" LBtnUpScp="Interface.SwitchAll('levels', 'potions')"/>
+	<button name="back" caption="Назад" rect="380 425 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>	
+	<tooltip name="enable_all_tip" parent="enable_all" caption="Включить использование банок для всех персонажей" fontname="sandyellow_12_ol" width="256"/>
+	<tooltip name="disable_all_tip" parent="disable_all" caption="Выключить использование банок для всех персонажей" fontname="sandyellow_12_ol" width="256"/>
+	<tooltip name="level_to_top_tip" parent="level_to_top" caption="Установить все уровни на максимум" fontname="sandyellow_12_ol" width="256"/>
+	<tooltip name="back_tip" parent="back" caption="Вернуться в главное меню" fontname="sandyellow_12_ol" width="256"/>	
+</uiframe>

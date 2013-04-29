@@ -1,0 +1,29 @@
+Addons.Current.Shop = 
+{	
+	ListID = 4,
+	Name = "",
+	Description = "",
+	Author = "EatingPeopleIsFun",
+	CallType = "Once",
+	Interval = 0
+};
+
+Addons.Current.Shop.Initialize = func(){
+	Addons.Current.Shop.Text = Addons.AssignTextFile('shop_anywhere');
+	Addons.Current.Shop.Name = Addons.Current.Shop.Text['Name'];
+	Addons.Current.Shop.Description = Addons.Current.Shop.Text['Description'];
+}
+
+Addons.Current.Shop.Start = func(){
+	Toggle('shop');
+}
+
+Addons.Current.Shop.Stop = func(){
+	Close('shop');
+}
+
+Addons.Current.Shop.MainBody = func(){
+
+}
+
+Addons.Current.Shop.Initialize();

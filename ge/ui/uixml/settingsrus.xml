@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Настройки [Ctrl + F5]" class="settingsrus" x="0" y="0" width="500" height="460" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>				
+	<labelbox name="auto_pick_box" rect="20 45 460 355"/>	
+	<text name="Keep" caption="%s" param1="k" fontname="white_13_ol" rect="30 60 10 10" alignx="left" aligny="top"/>
+	<text name="Pick" caption="%s" param1="p" fontname="white_13_ol" rect="30 95 10 10" alignx="left" aligny="top"/>
+	<text name="KeepValue" caption="%s" param1="kv" fontname="white_13_ol" rect="400 75 10 10" alignx="left" aligny="top"/>
+	<text name="PickValue" caption="%s" param1="pv" fontname="white_13_ol" rect="400 115 10 10" alignx="left" aligny="top"/>
+	<text name="Attack" caption="%s" param1="a" fontname="white_13_ol" rect="30 165 10 10" alignx="left" aligny="top"/>
+	<text name="Mode" caption="%s" param1="m" fontname="white_13_ol" rect="30 230 10 10" alignx="left" aligny="top"/>
+	<slidebar name="KeepRange" rect="235 55 230 20" maxlevel="5000" defaultlevel="2000" SelectScp="Interface.SetSettings('slider', 'KeepRange')"/>
+	<slidebar name="PickRange" rect="235 95 230 20" maxlevel="5000" defaultlevel="2000" SelectScp="Interface.SetSettings('slider', 'PickRange')"/>	
+	<text name="name1" caption="%s" param1="n1" fontname="itemlistboxoption_feso" rect="50 130 10 10" alignx="left" aligny="top"/>
+	<text name="name2" caption="%s" param1="n2" fontname="itemlistboxoption_feso" rect="200 130 10 10" alignx="left" aligny="top"/>
+	<text name="name3" caption="%s" param1="n3" fontname="itemlistboxoption_feso" rect="350 130 10 10" alignx="left" aligny="top"/>	
+	<checkbox name="AutoPickChar1" rect="30 130 10 10" SelectScp="Interface.SetSettings('check', 'AutoPickChar1')"/>
+	<checkbox name="AutoPickChar2" rect="180 130 10 10" SelectScp="Interface.SetSettings('check', 'AutoPickChar2')"/>
+	<checkbox name="AutoPickChar3" rect="330 130 10 10" SelectScp="Interface.SetSettings('check', 'AutoPickChar3')"/>	
+	<text name="name11" caption="%s" param1="n1" fontname="itemlistboxoption_feso" rect="50 190 10 10" alignx="left" aligny="top"/>
+	<text name="name12" caption="%s" param1="n2" fontname="itemlistboxoption_feso" rect="200 190 10 10" alignx="left" aligny="top"/>
+	<text name="name13" caption="%s" param1="n3" fontname="itemlistboxoption_feso" rect="350 190 10 10" alignx="left" aligny="top"/>	
+	<checkbox name="AutoAttack1" rect="30 190 10 10" SelectScp="Interface.SetSettings('checkactor', 'autoattack1', 1)"/>
+	<checkbox name="AutoAttack2" rect="180 190 10 10" SelectScp="Interface.SetSettings('checkactor', 'autoattack2', 2)"/>
+	<checkbox name="AutoAttack3" rect="330 190 10 10" SelectScp="Interface.SetSettings('checkactor', 'autoattack3', 3)"/>			
+	<text name="retu" caption="%s" param1="re" fontname="white_13_ol" rect="200 255 10 10" alignx="left" aligny="top"/>	
+	<edit name="eac" rect="340 255 35 20"/>
+	<text name="sec" caption="секунд" fontname="white_13_ol" rect="380 255 10 10" alignx="left" aligny="top"/>
+	<button name="save" caption="Сохранить режим" rect="300 280 140 24" LBtnUpScp="Interface.SetSettings('mode')"/>
+	<button name="back" caption="Назад" rect="380 425 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>
+	<tooltip name="back_tip" parent="back" caption="Вернуться в главное меню" fontname="sandyellow_12_ol" width="256"/>	
+	<listbox name = "select_mode" rect = "30 255 150 50" LBtnUpScp="Interface.SetMode()"/>
+		<listboxitem parent = "select_mode" caption = "Стоять на месте" id="stand"/>
+	    <listboxitem parent = "select_mode" caption = "Бегать за лидером" id="run"/>
+	<text name="CallAtBuff" caption="%s" param1="capb" fontname="white_13_ol" rect="50 325 10 10" alignx="left" aligny="top"/>
+	<checkbox name="CallAtPartyBuff" rect="30 325 10 10" SelectScp="Interface.SetSettings('check', 'CallAtPartyBuff')"/>	
+	<text name="Language" caption="%s" param1="lang" fontname="white_13_ol" rect="30 360 10 10" alignx="left" aligny="top"/>
+	<checkbox name="rus" rect="180 360 10 10" SelectScp="Interface.SetSettings('lang', 'rus')"/>
+	<checkbox name="eng" rect="330 360 10 10" SelectScp="Interface.SetSettings('lang', 'eng')"/>
+	<text name="rustext" caption="%s" param1="ru" fontname="itemlistboxoption_feso" rect="200 360 10 10" alignx="left" aligny="top"/>
+	<text name="engtext" caption="%s" param1="en" fontname="itemlistboxoption_feso" rect="350 360 10 10" alignx="left" aligny="top"/>
+</uiframe>

@@ -1,0 +1,201 @@
+// Hold Check
+func SCR_AI_LIB_UNHOLD(selfAi, prevTS)
+{
+	if(prevTS == 'TS_HOLD' || prevTS == 'TS_HOLD_BATTLE'){
+		UnHold(selfAi);
+	}
+}
+// User Target Check
+func SCR_AI_LIB_USERTARGET(selfAi)
+{
+	var userTarget = GetUserTarget(selfAi);
+	if(userTarget != nil){
+		SetAiTarget(selfAi, userTarget);
+		SetTarget(selfAi, 'NOMINATE', userTarget);
+		ClearUserTarget(selfAi);
+		ChangeTacticsAi(selfAi, 'TS_BATTLE_NOMINATE');
+		return 'ChangeTS';
+	}
+}
+// User Skill Check
+func SCR_AI_LIB_USERSKILL(selfAi)
+{
+	if(IsSkillUsing(selfAi) == 'YES'){
+		ChangeTacticsAi(selfAi, 'TS_USER_SKILL');
+		return 'ChangeTS';
+	}
+}
+// Healing Check
+func SCR_AI_LIB_HEALING(self, selfAi)
+{
+	var job = GetJobName(selfAi);
+	if (job == 'CatherineREAL' || job == 'Berroniff' || job == 'Vincent'){
+		return 'ChangeTS_Prev';
+	}
+
+	var option = GetOption(self);
+	var needHealFriend = GetNeedHealFriend(selfAi, option.KeepRange, option.Heal);
+
+	if( needHealFriend != nil ){
+		InstantHold(selfAi);
+
+		var SkillID;
+		
+		if (job == 'Valleria'){
+			SkillID = 1021;
+		} else {
+			SkillID = 1003;
+		}
+
+		UseSkill(selfAi, needHealFriend, SkillID);
+		ChangeTacticsAi(selfAi, 'TS_USER_SKILL');
+		return 'ChangeTS';
+	}
+}
+// Sub Healing Healing Check
+func SCR_AI_LIB_SUBHEALING(self, selfAi)
+{
+	var option = GetOption(self);
+	var job = GetJobName(selfAi);
+	if(job == 'Soho' || job=='Emilia'){
+		var needHealFriend = GetNeedHealFriend(selfAi, option.KeepRange, option.Heal);
+		if( needHealFriend != nil ){
+			InstantHold(selfAi);
+			UseSkill(selfAi, needHealFriend, 1003);
+			ChangeTacticsAi(selfAi, 'TS_USER_SKILL');
+			return 'ChangeTS';
+		}
+	}
+}
+// Near Target Check
+func SCR_AI_LIB_NEARTARGET(self, selfAi)
+{
+	var option = GetOption(self);
+	var	curTarget = GetNearAtkableEnemy(selfAi, option.KeepRange);
+	if( curTarget != nil ) {
+		SetAiTarget(selfAi, curTarget);
+		return 'ChangeTS_BATTLE';
+	}
+}
+// Near Target Check On Hold
+func SCR_AI_LIB_NEARTARGET_ON_HOLD(self, selfAi)
+{
+	var option = GetOption(self);
+	var	curTarget = GetNearAtkableEnemyOnHold(selfAi, option.KeepRange);
+	if( curTarget != nil ) {
+		SetAiTarget(selfAi, curTarget);
+		ChangeTacticsAi(selfAi, 'TS_HOLD_BATTLE');
+		return;
+	}
+}
+// Keep Position Check
+func SCR_AI_LIB_KEEPPOSITION(selfAi)
+{
+	if(IsNearFromKeepDestPosition(selfAi, 100) != 'YES'){
+		KeepDestMoveTo(selfAi);
+		sleep(100);
+	}
+}
+
+func SCR_AI_LIB_KEEPPOSITION_DIST(selfAi, dist)
+{
+	if(IsNearFromKeepDestPosition(selfAi, dist) != 'YES'){
+		ClearAiTarget(selfAi);
+		KeepDestMoveTo(selfAi);
+		ChangeTacticsAi(selfAi, 'TS_MOVE_PREVTS');		
+		sleep(100);
+	}
+}
+
+
+// Attack Target
+func SCR_AI_LIB_ATTACKTARGET(selfAi)
+{
+	var curTarget = GetAiTarget(selfAi);
+	if( curTarget != nil ) {
+		SetAiTarget(selfAi, curTarget);
+		var attackable = IsAbleToAttack(selfAi);
+		if( attackable == 'YES' ){
+			Attack(selfAi, curTarget);
+		}else{
+			WarningMsg(attackable);
+			sleep(1000);
+		}
+	}
+}
+// Target Available Chk
+func SCR_AI_LIB_TARGETAVAILABLE(selfAi)
+{
+	var curTarget = GetAiTarget(selfAi);
+	if(curTarget == nil){
+		ClearAiTarget(selfAi);
+		return 'ChangeTS_Prev';
+	}
+}
+// Skill Using Check
+func SCR_AI_LIB_SKILLUSING(selfAi, prevTS)
+{
+	if(IsSkillUsing(selfAi) == 'YES'){
+		sleep(100);
+	}else{
+		if(prevTS == 'TS_ASSAULT' || prevTS == 'TS_ASSAULT_BATTLE'){
+			ChangeTacticsAi(selfAi, 'TS_ASSAULT');
+		}else if(prevTS == 'TS_BATTLE_NOMINATE'){
+			ChangeTacticsAi(selfAi, 'TS_BATTLE_NOMINATE');
+		}else if(prevTS == 'TS_KEEP' || prevTS == 'TS_KEEP_BATTLE'){
+			ChangeTacticsAi(selfAi, 'TS_KEEP');
+		}else if(prevTS == 'TS_HOLD' ){
+			ChangeTacticsAi(selfAi, 'TS_HOLD');
+		}else{
+			ChangeTacticsAi(selfAi, 'TS_NONE');
+		}
+		return 'ChangeTS';
+	}
+}
+// Hold
+func SCR_AI_LIB_HOLD(selfAi)
+{
+	InstantHold(selfAi);
+	Hold(selfAi);
+}
+// Target Out Of Range Check 
+func SCR_AI_LIB_OUTOFRANGE(selfAi)
+{
+	var curTarget = GetAiTarget(selfAi);
+	if(IsTargetInMyAttackRange(selfAi, curTarget) == 'NO'){
+		return 'ChangeTS_Prev';
+	}
+}
+// Near Item Check
+func SCR_AI_LIB_NEARITEM(selfAi)
+{
+	var nearItem = GetNearItem(selfAi, 500);
+	if(nearItem != 0){
+		PickItem(selfAi, nearItem);
+		ChangeTacticsAi(selfAi, 'TS_HARVEST_PICK');
+		return 'ChangeTS';
+	}
+}
+// Target Item Check
+func SCR_AI_LIB_TARGETITEM(selfAi)
+{
+	var pickItem = GetPickItem(selfAi);
+	if(IsExistItem(pickItem) == 'NO'){
+		return 'ChangeTS_Prev';
+	}
+}
+// Clear All Target
+func SCR_AI_LIB_CLEARALLTARGET(selfAi)
+{
+	ClearUserTarget(selfAi);
+	ClearAiTarget(selfAi);
+	ClearCounterTarget(selfAi);
+}
+// Target Knock Down Check
+func SCR_AI_LIB_TARGETKD(selfAi)
+{
+	var curTarget = GetAiTarget(selfAi);
+	if('YES' == IsKd(curTarget)){
+		return 'ChangeTS';
+	}
+}

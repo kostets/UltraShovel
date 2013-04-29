@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Аддоны [Ctrl+F8]" class="addonsrus" x="0" y="0" width="500" height="250" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>
+	<labelbox name="addons_box" rect="20 45 460 150"/>	
+	<listbox name = "select_addon" rect = "30 75 250 100" LBtnUpScp="Addons.Set()"/>
+		<listboxitem parent = "select_addon" caption = "Броад спаммер" id="id_bs"/>
+	    <listboxitem parent = "select_addon" caption = "Инъекция" id="id_ci"/>
+	    <listboxitem parent = "select_addon" caption = "Тюремные мышки" id="id_pm"/>
+	    <listboxitem parent = "select_addon" caption = "Склад всегда с собой" id="id_wa"/>
+		<listboxitem parent = "select_addon" caption = "Магазин всегда с собой" id="id_sa"/>
+		<listboxitem parent = "select_addon" caption = "Побег из тюрьмы" id="id_pb"/>
+	<text name="title" caption="%s" param1="t" fontname="itemlistboxoption_feso" rect="50 55 10 10" alignx="left" aligny="top"/>
+	<text name="author_title" caption="Автор:" fontname="itemlistboxoption_feso" rect="300 75 10 10" alignx="left" aligny="top"/>
+	<text name="desc_title" caption="Описание:" fontname="itemlistboxoption_feso" rect="300 95 10 10" alignx="left" aligny="top"/>
+	<text name="author" caption="%s" param1="author" fontname="white_13_ol" rect="360 75 10 10" alignx="left" aligny="top"/>
+	<text name="desc" caption="%s" param1="desc" fontname="white_13_ol" rect="300 115 100 100" alignx="left" aligny="top"/>
+	
+	<button name="start" caption="Запустить аддон" rect="30 210 160 24" LBtnUpScp="Addons.Start()"/>	
+	<button name="stop" caption="Остановить аддон" rect="210 210 160 24" LBtnUpScp="Addons.Stop()"/>	
+	
+	<button name="back" caption="Назад" rect="380 210 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>		
+	<tooltip name="back_tip" parent="back" caption="Вернуться в главное меню" fontname="sandyellow_12_ol" width="256"/>	
+</uiframe>

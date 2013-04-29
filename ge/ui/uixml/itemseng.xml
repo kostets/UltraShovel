@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<uiframe name="Shovel AI Auto Items [Ctrl + F6]" class="itemseng" x="0" y="0" width="470" height="510" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>	
+	<text name="titleai" caption="[%s]" param1="ai" fontname="itemlistboxoption_feso" rect="185 50 10 10" alignx="left" aligny="top"/>
+	<text name="titleitems" caption="[%s]" param1="ait" fontname="itemlistboxoption_feso" rect="185 220 10 10" alignx="left" aligny="top"/>
+	<labelbox name="auto_bullets_box" rect="20 70 430 130"/>	
+	<labelbox name="auto_items_box" rect="20 240 430 230"/>	
+	<text name="col1" caption="%s" param1="c1" fontname="white_yellow_14_ol" rect="60 85 10 10" alignx="left" aligny="top"/>
+	<text name="col2" caption="%s" param1="c2" fontname="white_yellow_14_ol" rect="220 85 10 10" alignx="left" aligny="top"/>
+	<text name="col3" caption="%s" param1="c3" fontname="white_yellow_14_ol" rect="375 85 10 10" alignx="left" aligny="top"/>	
+	<text name="name1" caption="[%s]" param1="n1" fontname="itemlistboxoption_feso" rect="60 110 10 10" alignx="left" aligny="top"/>
+	<text name="name2" caption="[%s]" param1="n2" fontname="itemlistboxoption_feso" rect="60 135 10 10" alignx="left" aligny="top"/>
+	<text name="name3" caption="[%s]" param1="n3" fontname="itemlistboxoption_feso" rect="60 160 10 10" alignx="left" aligny="top"/>
+	
+	<checkbox name="autoBullets1" rect="30 110 10 10" SelectScp="Interface.SetSettings('checkactor', 'bullets', 1)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoBullets2" rect="30 135 10 10" SelectScp="Interface.SetSettings('checkactor', 'bullets', 2)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoBullets3" rect="30 160 10 10" SelectScp="Interface.SetSettings('checkactor', 'bullets', 3)" fontname="sandyellow_12_ol"/>	
+
+	<droplist name = "bullets1" rect = "220 110 150 20" SelectScp="Interface.SetSettings('checkactor', 'bullets1', 1)"/>
+	<droplistitem name = "bullet1_1" parent = "bullets1" caption = "Pistol Bullets"/>
+	<droplistitem name = "bullet1_2" parent = "bullets1" caption = "Rifle Bullets"/>
+	<droplistitem name = "bullet1_3" parent = "bullets1" caption = "Buckshot"/>
+	<droplistitem name = "bullet1_4" parent = "bullets1" caption = "Heavy Shell"/>
+	<droplistitem name = "bullet1_5" parent = "bullets1" caption = "Bolt"/>
+	<droplistitem name = "bullet1_6" parent = "bullets1" caption = "Gunpowder Bolt"/>
+	<droplistitem name = "bullet1_7" parent = "bullets1" caption = "Steel Bullet"/>
+	<droplistitem name = "bullet1_8" parent = "bullets1" caption = "Elemental Sphere"/>
+	<droplistitem name = "bullet1_9" parent = "bullets1" caption = "Psychic Sphere"/>
+	<droplistitem name = "bullet1_10" parent = "bullets1" caption = "Metal Shell Ammo"/>
+	<droplistitem name = "bullet1_11" parent = "bullets1" caption = "Steel Bolt"/>
+	<droplistitem name = "bullet1_12" parent = "bullets1" caption = "Large Caliber Bullet"/>
+	
+	<droplist name = "numpad1" rect = "375 110 60 20" SelectScp="Interface.SetSettings('checkactor', 'numpad1', 1)"/>
+	<droplistitem name = "num1_1" parent = "numpad1" caption = "Num1"/>
+	<droplistitem name = "num1_2" parent = "numpad1" caption = "Num2"/>
+	<droplistitem name = "num1_3" parent = "numpad1" caption = "Num3"/>
+	<droplistitem name = "num1_4" parent = "numpad1" caption = "Num4"/>
+	<droplistitem name = "num1_5" parent = "numpad1" caption = "Num5"/>
+	<droplistitem name = "num1_6" parent = "numpad1" caption = "Num6"/>
+	<droplistitem name = "num1_7" parent = "numpad1" caption = "Num7"/>
+	
+	<droplist name = "bullets2" rect = "220 135 150 20" SelectScp="Interface.SetSettings('checkactor', 'bullets2', 2)"/>
+	<droplistitem name = "bullet2_1" parent = "bullets2" caption = "Pistol Bullets"/>
+	<droplistitem name = "bullet2_2" parent = "bullets2" caption = "Rifle Bullets"/>
+	<droplistitem name = "bullet2_3" parent = "bullets2" caption = "Buckshot"/>
+	<droplistitem name = "bullet2_4" parent = "bullets2" caption = "Heavy Shell"/>
+	<droplistitem name = "bullet2_5" parent = "bullets2" caption = "Bolt"/>
+	<droplistitem name = "bullet2_6" parent = "bullets2" caption = "Gunpowder Bolt"/>
+	<droplistitem name = "bullet2_7" parent = "bullets2" caption = "Steel Bullet"/>
+	<droplistitem name = "bullet2_8" parent = "bullets2" caption = "Elemental Sphere"/>
+	<droplistitem name = "bullet2_9" parent = "bullets2" caption = "Psychic Sphere"/>
+	<droplistitem name = "bullet2_10" parent = "bullets2" caption = "Metal Shell Ammo"/>
+	<droplistitem name = "bullet2_11" parent = "bullets2" caption = "Steel Bolt"/>
+	<droplistitem name = "bullet2_12" parent = "bullets2" caption = "Large Caliber Bullet"/>
+	
+	<droplist name = "numpad2" rect = "375 135 60 20" SelectScp="Interface.SetSettings('checkactor', 'numpad2', 2)"/>
+	<droplistitem name = "num2_1" parent = "numpad2" caption = "Num1"/>
+	<droplistitem name = "num2_2" parent = "numpad2" caption = "Num2"/>
+	<droplistitem name = "num2_3" parent = "numpad2" caption = "Num3"/>
+	<droplistitem name = "num2_4" parent = "numpad2" caption = "Num4"/>
+	<droplistitem name = "num2_5" parent = "numpad2" caption = "Num5"/>
+	<droplistitem name = "num2_6" parent = "numpad2" caption = "Num6"/>
+	<droplistitem name = "num2_7" parent = "numpad2" caption = "Num7"/>
+	
+	<droplist name = "bullets3" rect = "220 160 150 20" SelectScp="Interface.SetSettings('checkactor', 'bullets3', 3)"/>
+	<droplistitem name = "bullet3_1" parent = "bullets3" caption = "Pistol Bullets"/>
+	<droplistitem name = "bullet3_2" parent = "bullets3" caption = "Rifle Bullets"/>
+	<droplistitem name = "bullet3_3" parent = "bullets3" caption = "Buckshot"/>
+	<droplistitem name = "bullet3_4" parent = "bullets3" caption = "Heavy Shell"/>
+	<droplistitem name = "bullet3_5" parent = "bullets3" caption = "Bolt"/>
+	<droplistitem name = "bullet3_6" parent = "bullets3" caption = "Gunpowder Bolt"/>
+	<droplistitem name = "bullet3_7" parent = "bullets3" caption = "Steel Bullet"/>
+	<droplistitem name = "bullet3_8" parent = "bullets3" caption = "Elemental Sphere"/>
+	<droplistitem name = "bullet3_9" parent = "bullets3" caption = "Psychic Sphere"/>
+	<droplistitem name = "bullet3_10" parent = "bullets3" caption = "Metal Shell Ammo"/>
+	<droplistitem name = "bullet3_11" parent = "bullets3" caption = "Steel Bolt"/>
+	<droplistitem name = "bullet3_12" parent = "bullets3" caption = "Large Caliber Bullet"/>
+	
+	<droplist name = "numpad3" rect = "375 160 60 20" SelectScp="Interface.SetSettings('checkactor', 'numpad3', 3)"/>
+	<droplistitem name = "num3_1" parent = "numpad3" caption = "Num1"/>
+	<droplistitem name = "num3_2" parent = "numpad3" caption = "Num2"/>
+	<droplistitem name = "num3_3" parent = "numpad3" caption = "Num3"/>
+	<droplistitem name = "num3_4" parent = "numpad3" caption = "Num4"/>
+	<droplistitem name = "num3_5" parent = "numpad3" caption = "Num5"/>
+	<droplistitem name = "num3_6" parent = "numpad3" caption = "Num6"/>
+	<droplistitem name = "num3_7" parent = "numpad3" caption = "Num7"/>
+	
+	<checkbox name="autoitem1_check" rect="50 270 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse1', 1)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem2_check" rect="50 295 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse2', 2)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem3_check" rect="50 320 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse3', 3)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem4_check" rect="50 345 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse4', 4)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem5_check" rect="50 370 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse5', 5)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem6_check" rect="50 395 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse6', 6)" fontname="sandyellow_12_ol"/>
+	<checkbox name="autoitem7_check" rect="50 420 10 10" SelectScp="Interface.SetSettings('check', 'ItemUse7', 7)" fontname="sandyellow_12_ol"/>
+	
+	<edit name="autoitem1_edit" rect="300 270 35 20"/>
+	<edit name="autoitem2_edit" rect="300 295 35 20"/>
+	<edit name="autoitem3_edit" rect="300 320 35 20"/>
+	<edit name="autoitem4_edit" rect="300 345 35 20"/>
+	<edit name="autoitem5_edit" rect="300 370 35 20"/>
+	<edit name="autoitem6_edit" rect="300 395 35 20"/>
+	<edit name="autoitem7_edit" rect="300 420 35 20"/>	
+	
+	<text name="re1" caption="%s" param1="re" fontname="white_13_ol" rect="150 270 10 10" alignx="left" aligny="top"/>
+	<text name="re2" caption="%s" param1="re" fontname="white_13_ol" rect="150 295 10 10" alignx="left" aligny="top"/>
+	<text name="re3" caption="%s" param1="re" fontname="white_13_ol" rect="150 320 10 10" alignx="left" aligny="top"/>
+	<text name="re4" caption="%s" param1="re" fontname="white_13_ol" rect="150 345 10 10" alignx="left" aligny="top"/>
+	<text name="re5" caption="%s" param1="re" fontname="white_13_ol" rect="150 370 10 10" alignx="left" aligny="top"/>
+	<text name="re6" caption="%s" param1="re" fontname="white_13_ol" rect="150 395 10 10" alignx="left" aligny="top"/>
+	<text name="re7" caption="%s" param1="re" fontname="white_13_ol" rect="150 420 10 10" alignx="left" aligny="top"/>
+	
+	<text name="sec1" caption="%s" param1="sec" fontname="white_13_ol" rect="345 270 10 10" alignx="left" aligny="top"/>
+	<text name="sec2" caption="%s" param1="sec" fontname="white_13_ol" rect="345 295 10 10" alignx="left" aligny="top"/>
+	<text name="sec3" caption="%s" param1="sec" fontname="white_13_ol" rect="345 320 10 10" alignx="left" aligny="top"/>
+	<text name="sec4" caption="%s" param1="sec" fontname="white_13_ol" rect="345 345 10 10" alignx="left" aligny="top"/>
+	<text name="sec5" caption="%s" param1="sec" fontname="white_13_ol" rect="345 370 10 10" alignx="left" aligny="top"/>
+	<text name="sec6" caption="%s" param1="sec" fontname="white_13_ol" rect="345 395 10 10" alignx="left" aligny="top"/>
+	<text name="sec7" caption="%s" param1="sec" fontname="white_13_ol" rect="345 420 10 10" alignx="left" aligny="top"/>
+	
+	<droplist name = "Item1" rect = "70 268 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item1')"/>
+	<droplistitem name = "autoitem1_1" parent = "Item1" caption = "Num1"/>
+	<droplistitem name = "autoitem1_2" parent = "Item1" caption = "Num2"/>
+	<droplistitem name = "autoitem1_3" parent = "Item1" caption = "Num3"/>
+	<droplistitem name = "autoitem1_4" parent = "Item1" caption = "Num4"/>
+	<droplistitem name = "autoitem1_5" parent = "Item1" caption = "Num5"/>
+	<droplistitem name = "autoitem1_6" parent = "Item1" caption = "Num6"/>
+	<droplistitem name = "autoitem1_7" parent = "Item1" caption = "Num7"/>
+	
+	<droplist name = "Item2" rect = "70 293 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item2')"/>
+	<droplistitem name = "autoitem2_1" parent = "Item2" caption = "Num1"/>
+	<droplistitem name = "autoitem2_2" parent = "Item2" caption = "Num2"/>
+	<droplistitem name = "autoitem2_3" parent = "Item2" caption = "Num3"/>
+	<droplistitem name = "autoitem2_4" parent = "Item2" caption = "Num4"/>
+	<droplistitem name = "autoitem2_5" parent = "Item2" caption = "Num5"/>
+	<droplistitem name = "autoitem2_6" parent = "Item2" caption = "Num6"/>
+	<droplistitem name = "autoitem2_7" parent = "Item2" caption = "Num7"/>
+		
+	<droplist name = "Item3" rect = "70 318 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item3')"/>
+	<droplistitem name = "autoitem3_1" parent = "Item3" caption = "Num1"/>
+	<droplistitem name = "autoitem3_2" parent = "Item3" caption = "Num2"/>
+	<droplistitem name = "autoitem3_3" parent = "Item3" caption = "Num3"/>
+	<droplistitem name = "autoitem3_4" parent = "Item3" caption = "Num4"/>
+	<droplistitem name = "autoitem3_5" parent = "Item3" caption = "Num5"/>
+	<droplistitem name = "autoitem3_6" parent = "Item3" caption = "Num6"/>
+	<droplistitem name = "autoitem3_7" parent = "Item3" caption = "Num7"/>
+	
+	<droplist name = "Item4" rect = "70 343 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item4')"/>
+	<droplistitem name = "autoitem4_1" parent = "Item4" caption = "Num1"/>
+	<droplistitem name = "autoitem4_2" parent = "Item4" caption = "Num2"/>
+	<droplistitem name = "autoitem4_3" parent = "Item4" caption = "Num3"/>
+	<droplistitem name = "autoitem4_4" parent = "Item4" caption = "Num4"/>
+	<droplistitem name = "autoitem4_5" parent = "Item4" caption = "Num5"/>
+	<droplistitem name = "autoitem4_6" parent = "Item4" caption = "Num6"/>
+	<droplistitem name = "autoitem4_7" parent = "Item4" caption = "Num7"/>
+	
+	<droplist name = "Item5" rect = "70 368 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item5')"/>
+	<droplistitem name = "autoitem5_1" parent = "Item5" caption = "Num1"/>
+	<droplistitem name = "autoitem5_2" parent = "Item5" caption = "Num2"/>
+	<droplistitem name = "autoitem5_3" parent = "Item5" caption = "Num3"/>
+	<droplistitem name = "autoitem5_4" parent = "Item5" caption = "Num4"/>
+	<droplistitem name = "autoitem5_5" parent = "Item5" caption = "Num5"/>
+	<droplistitem name = "autoitem5_6" parent = "Item5" caption = "Num6"/>
+	<droplistitem name = "autoitem5_7" parent = "Item5" caption = "Num7"/>
+
+	<droplist name = "Item6" rect = "70 393 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item6')"/>
+	<droplistitem name = "autoitem6_1" parent = "Item6" caption = "Num1"/>
+	<droplistitem name = "autoitem6_2" parent = "Item6" caption = "Num2"/>
+	<droplistitem name = "autoitem6_3" parent = "Item6" caption = "Num3"/>
+	<droplistitem name = "autoitem6_4" parent = "Item6" caption = "Num4"/>
+	<droplistitem name = "autoitem6_5" parent = "Item6" caption = "Num5"/>
+	<droplistitem name = "autoitem6_6" parent = "Item6" caption = "Num6"/>
+	<droplistitem name = "autoitem6_7" parent = "Item6" caption = "Num7"/>
+	
+	<droplist name = "Item7" rect = "70 418 60 20" SelectScp="Interface.SetSettings('dropbox', 'Item7')"/>
+	<droplistitem name = "autoitem7_1" parent = "Item7" caption = "Num1"/>
+	<droplistitem name = "autoitem7_2" parent = "Item7" caption = "Num2"/>
+	<droplistitem name = "autoitem7_3" parent = "Item7" caption = "Num3"/>
+	<droplistitem name = "autoitem7_4" parent = "Item7" caption = "Num4"/>
+	<droplistitem name = "autoitem7_5" parent = "Item7" caption = "Num5"/>
+	<droplistitem name = "autoitem7_6" parent = "Item7" caption = "Num6"/>
+	<droplistitem name = "autoitem7_7" parent = "Item7" caption = "Num7"/>
+	
+	<button name="save" caption="Save" rect="260 475 90 24" LBtnUpScp="Interface.SetItems()"/>	
+	<button name="back" caption="Back" rect="380 475 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>			
+	<tooltip name="back_tip" parent="back" caption="Return to the main menu" fontname="sandyellow_12_ol" width="256"/>
+</uiframe>

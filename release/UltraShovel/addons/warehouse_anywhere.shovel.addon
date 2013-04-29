@@ -1,0 +1,29 @@
+Addons.Current.Warehouse = 
+{	
+	ListID = 3,
+	Name = "",
+	Description = "",
+	Author = "EatingPeopleIsFun",
+	CallType = "Once",
+	Interval = 0
+};
+
+Addons.Current.Warehouse.Initialize = func(){
+	Addons.Current.Warehouse.Text = Addons.AssignTextFile('warehouse_anywhere');
+	Addons.Current.Warehouse.Name = Addons.Current.Warehouse.Text['Name'];
+	Addons.Current.Warehouse.Description = Addons.Current.Warehouse.Text['Description'];
+}
+
+Addons.Current.Warehouse.Start = func(){
+	Toggle('warehouse');
+}
+
+Addons.Current.Warehouse.Stop = func(){
+	Close('warehouse');
+}
+
+Addons.Current.Warehouse.MainBody = func(){
+
+}
+
+Addons.Current.Warehouse.Initialize();

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Меню [Ctrl+F1]" class="menurus" x="0" y="0" width="420" height="520" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>
+	<picture name="img_logo" rect="20 35 380 75" image="shovel_logo.png" alignx="left" aligny="top"/>
+	<labelbox2 name="window_box" rect="20 120 380 195"/>	
+	<text name="autoskills" caption="[%s]" param1="as" fontname="itemlistboxoption_feso" rect="40 130 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_SKILLS_WINDOW" rect="40 150 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_elitepart_thswd.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('skills')"/>
+	<text name="autoitems" caption="[%s]" param1="ai" fontname="itemlistboxoption_feso" rect="130 130 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_POTIONS_WINDOW" rect="130 150 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_ablitycon.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('potions')"/>
+	<text name="alarms" caption="[%s]" param1="al" fontname="itemlistboxoption_feso" rect="220 130 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_ALARMS_WINDOW" rect="220 150 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_chara.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('alarms')"/>
+	<text name="settings" caption="[%s]" param1="se" fontname="itemlistboxoption_feso" rect="310 130 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_SETTINGS_WINDOW" rect="310 150 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_torschegear.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('settings')"/>
+	<text name="items" caption="[%s]" param1="it" fontname="itemlistboxoption_feso" rect="40 220 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_ITEMS_WINDOW" rect="40 240 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_dbox.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('items')"/>
+	<text name="news" caption="[%s]" param1="ne" fontname="itemlistboxoption_feso" rect="130 220 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_NEWS_WINDOW" rect="130 240 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_recallau.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('news')"/>
+	<text name="addons" caption="[%s]" param1="ad" fontname="itemlistboxoption_feso" rect="220 220 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_ADDONS_WINDOW" rect="220 240 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_chrscoin.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('addons')"/>
+	<text name="about" caption="[%s]" param1="ab" fontname="itemlistboxoption_feso" rect="310 220 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="OPEN_ABOUT_WINDOW" rect="310 240 64 64" LBtnDownSE="sys_uibottonclick2.ogg" img="\illust\it_e_gracepicture.bmp" imgrect="0 0 64 64" LBtnUpScp="Interface.LoadWindow('about')"/>
+	<text name="log" caption="%s" param1="lo" fontname="itemlistboxoption_feso" rect="30 320 10 10" alignx="left" aligny="top"/>
+	<labelbox2 name="log_box" rect="20 340 380 160"/>	
+	<text name="log_text" caption="%s" param1="l" fontname="white_14_ol" rect="30 350 10 10" alignx="left" aligny="top"/>
+</uiframe>

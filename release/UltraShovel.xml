@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UltraShovel>
+
+	<script name="UltraShovel\Core.scp" />
+
+	<script name="UltraShovel\lib.scp" />
+	<script name="UltraShovel\attacker.scp" />
+	<script name="UltraShovel\healer.scp" />
+	<script name="UltraShovel\puppet.scp" />
+
+</UltraShovel>

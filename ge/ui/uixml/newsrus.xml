@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Новости [Ctrl+F7]" class="newsrus" x="0" y="0" width="500" height="500" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>
+	<webpicture name="pic" rect="50 50 400 400" image="blank" imgrect="0 0 400 400" url="http://www.eatingpeopleisfun.ru/shovel_ai/news/1.jpg"/>
+	<button name="back" caption="Назад" rect="350 460 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>		
+	<tooltip name="back_tip" parent="back" caption="Вернуться в главное меню" fontname="sandyellow_12_ol" width="256"/>	
+</uiframe>

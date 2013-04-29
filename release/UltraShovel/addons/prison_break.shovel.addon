@@ -1,0 +1,210 @@
+Addons.Current.PrisonBreak = 
+{	
+	ListID = 5,
+	Name = "",
+	Description = "",
+	Author = "EatingPeopleIsFun",
+	CallType = "Many",
+	Interval = 0,
+	IsEnabled = false,
+	RatMeatNeeded = 32767,
+	RatToenailNeeded = 32767,	
+	Stage = 1,
+	Spot = 1,
+	MaxSpot = 1,
+	PickUp = true
+};
+
+Addons.Current.PrisonBreak.Initialize = func(){
+	Addons.Current.PrisonBreak.Text = Addons.AssignTextFile('prison_break');
+	Addons.Current.PrisonBreak.Name = Addons.Current.PrisonBreak.Text['Name'];
+	Addons.Current.PrisonBreak.Description = Addons.Current.PrisonBreak.Text['Description'];
+	
+}
+
+Addons.Current.PrisonBreak.Start = func(){
+	
+	var name = Shovel.AiFolder .. Shovel.FSP .. Shovel.AddonsFolder .. Shovel.FSP .. 'prison_break.shovel.addon.ini';
+	var f = io.open(name, 'r');
+	if (!f) { 
+		SysMsg("Could not find Settings file");
+		return;
+	}
+	var s,k,v = f:read('*a');
+	f:close();
+	s = string.gsub(s, '#[^' .. string.char(10) .. ']*', '');
+	for (k, v in string.gfind(s, "(%w+);(%w+)"))
+	{
+		Addons.Current.PrisonBreak.RatToenailNeeded = tonumber(k);
+		Addons.Current.PrisonBreak.RatMeatNeeded = tonumber(v);
+	}	
+	
+	Addons.Current.PrisonBreak.IsEnabled = true;
+	SetAllSelectMode();
+
+	Addons.Current.PrisonBreak.Stage = 1;
+	Addons.Current.PrisonBreak.PrepareToStage(Addons.Current.PrisonBreak.Stage);
+	SelectAll();
+	Keep();
+}
+
+Addons.Current.PrisonBreak.Stop = func(){
+	Addons.Current.PrisonBreak.IsEnabled = false;
+	Close('mccmsg');
+}
+
+Addons.Current.PrisonBreak.MainBody = func(){
+	Addons.Current.PrisonBreak.ShowMessage();
+	if (Addons.Current.PrisonBreak.Stage == 1) 
+	{
+		Addons.Current.PrisonBreak.Status = Addons.Current.PrisonBreak.Text['Hunting'];
+ 		if (Addons.Current.PrisonBreak.IsEnd()) return; 
+	} 
+	if (Addons.Current.PrisonBreak.Stage == 2) 
+	{		
+		if (Addons.Current.PrisonBreak.IsEnd()) return;
+		var theAi = GetAiActor(Shovel.Actors[GetLeaderIndex()+1].Self);
+		if (IsMoving(theAi) == 'YES'){ return;}			
+						
+		for (i = 1, Brain.GetCharsCount())
+		{
+			if (Brain.AutoPick(Shovel.Actors[i]))
+			{	
+				Addons.Current.PrisonBreak.Status = Addons.Current.PrisonBreak.Text['Picking'];
+				Addons.Current.PrisonBreak.ShowMessage();
+				Addons.Timer = Addons.Timer + 1;
+				return;
+			}
+		}
+				
+		Addons.Current.PrisonBreak.NextSpot();
+		Move(Addons.Current.PrisonBreak.Coords[Addons.Current.PrisonBreak.Spot][1], 
+			 Addons.Current.PrisonBreak.Coords[Addons.Current.PrisonBreak.Spot][2], 
+			 Addons.Current.PrisonBreak.Coords[Addons.Current.PrisonBreak.Spot][3]);
+		
+		Addons.Current.PrisonBreak.Status = Addons.Current.PrisonBreak.Text['Moving'];
+		Addons.Current.PrisonBreak.ShowMessage();
+		
+		Addons.Timer = Addons.Timer + 5;
+	}
+}
+
+Addons.Current.PrisonBreak.PrepareToStage = func() {
+	if (Addons.Current.PrisonBreak.Stage == 1)	{
+
+		for	(i=1, Brain.GetCharsCount())
+		{
+			Settings['AutoPickChar' .. i] = true;
+			Shovel.Actors[i].AutoAttack = true;
+		}
+		
+		Settings['Mode'] = 1;
+		Settings['KeepRange'] = 4000;
+		Settings['PickRange'] = 4000;
+		
+		SetPropertyNumber("NPC", "PRISON_MOUSE", "Scale", .01);
+		SetPropertyNumber("NPC", "PRISON_MOUSE_M", "Scale", .01);
+		
+		Keep();
+	}
+	if (Addons.Current.PrisonBreak.Stage == 2)	{
+		Addons.Current.PrisonBreak.MaxSpot = table.getn(Addons.Current.PrisonBreak.Coords);
+		Addons.Current.PrisonBreak.Spot = math.random(1, Addons.Current.PrisonBreak.MaxSpot);
+		SetPropertyNumber("NPC", "PRISON_MOUSE", "Scale", 20);
+		SetPropertyNumber("NPC", "PRISON_MOUSE_M", "Scale", 20);
+		
+		Settings['Mode'] = 0;
+		Settings['KeepRange'] = 1000;
+		Settings['PickRange'] = 1000;
+	}
+}
+
+Addons.Current.PrisonBreak.IsEnd = func() {
+	if (Addons.Current.PrisonBreak.Stage == 1)
+	{
+		if (GetItemCountByType(21891) < Addons.Current.PrisonBreak.RatToenailNeeded - 10) {
+			return false;
+		}
+		else {
+			Addons.Current.PrisonBreak.Stage = 2;
+			Addons.Current.PrisonBreak.PrepareToStage();
+			return true;
+		}
+	}
+	if (Addons.Current.PrisonBreak.Stage == 2)
+	{
+		if (GetItemCountByType(21890) < Addons.Current.PrisonBreak.RatMeatNeeded - 10) {
+			return false;
+		}
+		else {
+			MsgBox(Addons.Current.PrisonBreak.Text['End']);
+			Addons.Current.PrisonBreak.Stage = 3;
+			Addons.Current.PrisonBreak.Stop();
+			return true;
+		}
+	}
+}
+
+Addons.Current.PrisonBreak.ShowMessage = func (status) {
+	var msg = Addons.Current.PrisonBreak.Text['RatToenails'] .. ': ' .. tostring(GetItemCountByType(21891)) .. '/' .. Addons.Current.PrisonBreak.RatToenailNeeded .. ' | ';
+	msg = msg .. Addons.Current.PrisonBreak.Text['RatMeat'] .. ': ' .. tostring(GetItemCountByType(21890)) .. '/' .. Addons.Current.PrisonBreak.RatMeatNeeded .. ' | ';
+	msg = msg .. Addons.Current.PrisonBreak.Text['Spawn'] .. ': ' .. tostring(Addons.Current.PrisonBreak.Spot) .. ' | ';
+	msg = msg .. Addons.Current.PrisonBreak.Text['Status'] .. ': ' .. tostring(Addons.Current.PrisonBreak.Status);
+	Open('mccmsg');
+	var frame = GetFrameByName('mccmsg');
+	if (!frame) return;
+	SetTextByKey(frame, 'mccmsg', msg);
+}
+
+Addons.Current.PrisonBreak.NextSpot = func () {
+	Addons.Current.PrisonBreak.Spot = (Addons.Current.PrisonBreak.Spot + 1);
+	if (Addons.Current.PrisonBreak.Spot > Addons.Current.PrisonBreak.MaxSpot) Addons.Current.PrisonBreak.Spot = 1;
+}
+
+Addons.Current.PrisonBreak.Coords = {
+	{ 7259, 6775, 0 },    { 8006, 6621, 0 },    { 9073, 5968, 0 },    { 8865, 7124, 0 },    { 8121, 8032, 0 },
+	{ 8241, 8770, 0 },    { 9007, 8417, 0 },    { 9516, 9213, 0 },    { 11053, 8826, 0 },   { 11853, 7372, 0 },
+	{ 11008, 7456, 0 },   { 9892, 7644, 0 },    { 9970, 6626, 0 },    { 10915, 6316, 0 },   { 11909, 6230, 0 },
+	{ 12106, 5222, 0 },   { 12099, 4044, 0 },   { 11182, 4661, 0 },   { 10085, 5361, 0 },   { 10287, 3868, 200 },
+	{ 9484, 3872, 200 },  { 9359, 2610, 200 },  { 10299, 2427, 200 }, { 10002, 1404, 200 }, { 9840, -136, 0 },
+	{ 8514, -489, 0 },    { 8280, 841, 0 },     { 6939, 1167, 0 },    { 7346, -52, 0 },     { 6467, -1369, 0 },
+	{ 7369, -1748, 0 },   { 8544, -2310, 0 },   { 9623, -1585, 0 },   { 10269, -2543, 0 },  { 10924, -1512, 0 },
+	{ 12022, -1619, 0 },  { 11659, -742, 0 },   { 11243, 136, 0 },    { 12317, 302, 0 },    { 11969, 1440, 0 },
+	{ 13588, 1442, 0 },   { 14152, 447, 0 },    { 13381, -636, 0 },   { 13149, -2357, 0 },  { 11921, -2887, 0 },
+	{ 12004, -4350, 0 },  { 10328, -3784, 0 },  { 8960, -3403, 0 },   { 9250, -4529, 0 },   { 10144, -5529, 0 },
+	{ 10320, -7065, 0 },  { 9182, -6868, 0 },   { 8565, -5634, 0 },   { 7499, -6705, 0 },   { 7697, -7976, 0 },
+	{ 6346, -7419, 0 },   { 6429, -6107, 0 },   { 7236, -5312, 0 },   { 8057, -4505, 0 },   { 6992, -3753, 0 },
+	{ 6645, -3195, 0 },   { 5956, -4352, 0 },   { 4718, -4208, 0 },   { 4786, -5505, 0 },   { 4010, -4716, 0 },
+	{ 3231, -5361, 0 },   { 3754, -6460, 0 },   { 4393, -7518, 0 },   { 4591, -8508, 0 },   { 5692, -8662, 0 },
+	{ 6507, -9088, 0 },   { 6624, -10293, 0 },  { 5743, -9863, 0 },   { 4604, -9323, 0 },   { 3916, -10003, 0 },
+	{ 3141, -9244, 0 },   { 3006, -8108, 0 },   { 2847, -6951, 0 },   { 2117, -6227, 0 },   { 1263, -5085, 0 },
+	{ 2085, -4012, 0 },   { 953, -3840, 0 },    { -279, -4081, 0 },   { -1058, -3597, 0 },  { -1659, -3383, 0 },
+	{ -2367, -2600, 0 },  { -3381, -2501, 0 },  { -4293, -2586, 0 },  { -3873, -1445, 0 },  { -2785, -1583, 0 },
+	{ -1856, -1501, 0 },  { -1495, -585, 0 },   { -2644, -368, 0 },   { -3754, -243, 0 },   { -4623, -76, 0 },
+	{ -5927, -750, 0 },   { -5043, -1431, 0 },  { -5327, -2383, 0 },  { -6327, -2501, 0 },  { -6993, -1877, 0 },
+	{ -6984, -976, 0 },   { -7913, -1511, 0 },  { -8184, -703, 0 },   { -9209, 415, 0 },    { -9928, 1440, 0 },
+	{ -8702, 1297, 0 },   { -8092, 464, 0 },    { -6593, -80, 0 },    { -6686, 1440, 0 },   { -5314, 2091, 200 },
+	{ -5089, 3253, 200 }, { -5209, 4472, 65 },  { -6206, 4860, 0 },   { -7018, 4174, 0 },   { -8251, 4179, 0 },
+	{ -9048, 4629, 0 },   { -7354, 5373, 0 },   { -6256, 5613, 0 },   { -6693, 6445, 0 },   { -6763, 7527, 0 },
+	{ -5552, 7449, 0 },   { -4411, 8153, 0 },   { -4330, 6897, 0 },   { -3858, 5968, 0 },   { -4990, 6027, 0 },
+	{ -4437, 5138, 0 },   { -4001, 4461, 65 },  { -4062, 3092, 200 }, { -4103, 2058, 200 }, { -2670, 2207, 0 },
+	{ -1538, 2587, 0 },   { -1696, 3958, 0 },   { -819, 4648, 0 },    { -630, 5875, 0 },    { -241, 6928, 0 },
+	{ -1435, 7015, 0 },   { -1829, 5979, 0 },   { -2638, 7012, 0 },   { -3023, 7865, 0 },   { -2367, 8912, 0 },
+	{ -3236, 9574, 0 },   { -2999, 10442, 0 },  { -1438, 10001, 0 },  { -1050, 8537, 0 },   { 154, 8689, 0 },
+	{ 1211, 9811, 0 },    { -118, 10377, 0 },   { 145, 11803, 0 },    { 1351, 11415, 0 },   { 2531, 12350, 0 },
+	{ 2799, 10987, 0 },   { 2391, 9667, 0 },    { 1918, 8440, 0 },    { 2941, 8492, 0 },    { 2973, 7179, 0 },
+	{ 2642, 6037, 0 },    { 2926, 5416, 0 },    { 1309, 5383, 0 },    { 1828, 4180, 0 },    { 3135, 4247, 0 },
+	{ 3437, 3015, 0 },    { 3195, 1422, 0 },    { 1875, 1330, 0 },    { 2294, 2277, 0 },    { 2111, 3145, 0 },
+	{ 987, 2797, 0 },     { -277, 3220, 0 },    { -227, 2360, 0 },    { -1021, 1550, 0 },   { -1683, 752, 0 },
+	{ -544, 362, 0 },     { 61, -484, 0 },      { -747, -1619, 0 },   { -1305, -2489, 0 },  { -152, -3038, 0 },
+	{ 713, -2076, 0 },    { 1527, -1164, 0 },   { 1647, 107, 0 },     { 2727, -487, 0 },    { 2500, -2305, 0 },
+	{ 3884, -2166, 0 },   { 3862, -3387, 0 },   { 5075, -2408, 0 },   { 5012, -1009, 0 },   { 3962, -827, 0 },
+	{ 4754, 287, 0 },     { 5788, 658, 0 },     { 5245, 1519, 0 },    { 5187, 2699, 0 },    { 6157, 2341, 0 },
+	{ 7013, 3213, 0 },    { 6159, 4029, 0 },    { 7463, 5181, 0 },    { 6031, 5494, 0 },    { 4924, 4389, 0 },
+	{ 4141, 5806, 0 },    { 3970, 6481, 0 },    { 4487, 7203, 0 },    { 4109, 8346, 0 },    { 3952, 9328, 0 },
+	{ 5336, 9425, 0 },    { 5560, 10346, 0 },   { 4297, 10655, 0 },   { 3976, 11887, 0 },   { 5230, 11584, 0 },
+	{ 6567, 11315, 0 },   { 7962, 11968, 0 },   { 9374, 12091, 0 },   { 9943, 10722, 0 },   { 8606, 10415, 0 },
+	{ 7477, 10167, 0 },   { 6872, 9126, 0 },    { 6096, 8217, 0 },    { 6762, 7805, 0 }
+}
+
+Addons.Current.PrisonBreak.Initialize();

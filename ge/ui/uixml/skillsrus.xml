@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<uiframe name="Shovel AI Авто скиллы [Ctrl + F2]" class="skillsrus" x="0" y="0" width="585" height="535" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>	
+	<labelbox name="character1_box" rect="20 45 550 140"/>		
+	<text name="name1" caption="%s" param1="n1" fontname="itemlistboxoption_feso" rect="40 65 10 10" alignx="left" aligny="top"/>
+	<text name="job1" caption="%s" param1="j1" fontname="itemlistboxoption_feso" rect="40 85 10 10" alignx="left" aligny="top"/>
+	<text name="weapon1" caption="%s" param1="w1" fontname="sandyellow_12_ol" rect="70 110 10 10" alignx="left" aligny="top"/>
+	<text name="stance1" caption="%s" param1="s1" fontname="sandyellow_12_ol" rect="70 140 10 10" alignx="left" aligny="top"/>
+	<text name="time_q_text" caption="%s" param1="t11" fontname="white_13_ol" rect="210 135 10 10" alignx="left" aligny="top"/>
+	<text name="time_w_text" caption="%s" param1="t12" fontname="white_13_ol" rect="265 135 10 10" alignx="left" aligny="top"/>
+	<text name="time_e_text" caption="%s" param1="t13" fontname="white_13_ol" rect="320 135 10 10" alignx="left" aligny="top"/>
+	<text name="time_r_text" caption="%s" param1="t14" fontname="white_13_ol" rect="375 135 10 10" alignx="left" aligny="top"/>
+	<text name="time_t_text" caption="%s" param1="t15" fontname="white_13_ol" rect="430 135 10 10" alignx="left" aligny="top"/>
+	<text name="time_y_text" caption="%s" param1="t16" fontname="white_13_ol" rect="500 135 10 10" alignx="left" aligny="top"/>
+	<imgbutton name="prev_weapon1" rect="30 105 50 28" img="skin\button.bmp" imgrect="0 287 24 24" LBtnUpScp="Interface.ChangeWeapon('prev', 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_weapon1" rect="170 105 50 28" img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeWeapon('next', 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="prev_stance1" rect="30 135 50 28" img="skin\button.bmp" imgrect="0 287 24 24" LBtnUpScp="Interface.ChangeStance('prev', 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_stance1" rect="170 135 50 28" img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeStance('next', 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_q_up" rect="238 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up',	1, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_q_down" rect="238 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_w_up" rect="293 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up',	1, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_w_down" rect="293 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_e_up" rect="348 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up',	1, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_e_down" rect="348 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_r_up" rect="403 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up',	1, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_r_down" rect="403 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_t_up" rect="458 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 1, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_t_down" rect="458 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_y_up" rect="528 130 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 1, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_y_down" rect="528 142 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 1, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<webpicture name="pic_q" rect="210 75 40 40" image="blank" imgrect="0 0 40 40" url="http://%s" param1="pic11"/>
+	<webpicture name="pic_w" rect="265 75 40 40" image="blank" imgrect="40 0 40 40" url="http://%s" param1="pic12"/>
+	<webpicture name="pic_e" rect="320 75 40 40" image="blank" imgrect="80 0 40 40" url="http://%s" param1="pic13"/>
+	<webpicture name="pic_r" rect="375 75 40 40" image="blank" imgrect="120 0 40 40" url="http://%s" param1="pic14"/>
+	<webpicture name="pic_t" rect="430 75 40 40" image="blank" imgrect="160 0 40 40" url="http://%s" param1="pic15"/>
+	<webpicture name="pic_y" rect="500 75 40 40" image="blank" imgrect="200 0 40 40" url="http://%s" param1="pic16"/>
+	<checkbox name="check11" caption="" rect="240 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 1)"/>
+	<checkbox name="check12" caption="" rect="295 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 2)"/>
+	<checkbox name="check13" caption="" rect="350 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 3)"/>
+	<checkbox name="check14" caption="" rect="405 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 4)"/>
+	<checkbox name="check15" caption="" rect="460 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 5)"/>
+	<checkbox name="check16" caption="" rect="530 105 10 10" SelectScp="Interface.ChangeSkillUse(1, 6)"/>
+	<labelbox name="character2_box" rect="20 200 550 140"/>	
+	<text name="name2" caption="%s" param1="n2"	fontname="itemlistboxoption_feso" rect="40 220 10 10" alignx="left" aligny="top"/>
+	<text name="job2" caption="%s" param1="j2" fontname="itemlistboxoption_feso" rect="40 240 10 10" alignx="left" aligny="top"/>
+	<text name="weapon2" caption="%s" param1="w2" fontname="sandyellow_12_ol" rect="70 265 10 10" alignx="left" aligny="top"/>
+	<text name="stance2" caption="%s" param1="s2" fontname="sandyellow_12_ol" rect="70 295 10 10" alignx="left" aligny="top"/>
+	<text name="time_a_text" caption="%s" param1="t21" fontname="white_13_ol" rect="210 290 10 10" alignx="left" aligny="top"/>
+	<text name="time_s_text" caption="%s" param1="t22" fontname="white_13_ol" rect="265 290 10 10" alignx="left" aligny="top"/>
+	<text name="time_d_text" caption="%s" param1="t23" fontname="white_13_ol" rect="320 290 10 10" alignx="left" aligny="top"/>
+	<text name="time_f_text" caption="%s" param1="t24" fontname="white_13_ol" rect="375 290 10 10" alignx="left" aligny="top"/>
+	<text name="time_g_text" caption="%s" param1="t25" fontname="white_13_ol" rect="430 290 10 10" alignx="left" aligny="top"/>
+	<text name="time_h_text" caption="%s" param1="t26" fontname="white_13_ol" rect="500 290 10 10" alignx="left" aligny="top"/>	
+	<imgbutton name="prev_weapon2" rect="40 260 50 28" img="skin\button.bmp" imgrect="0 287 24 24" LBtnUpScp="Interface.ChangeWeapon('prev', 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_weapon2" rect="160 260 50 28"	img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeWeapon('next', 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="prev_stance2" rect="40 290 50 28" img="skin\button.bmp" imgrect="0 287 24 24" LBtnUpScp="Interface.ChangeStance('prev', 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_stance2" rect="160 290 50 28" img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeStance('next', 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_a_up" rect="238 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_a_down" rect="238 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_s_up" rect="293 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_s_down" rect="293 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_d_up" rect="348 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_d_down" rect="348 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_f_up" rect="403 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_f_down" rect="403 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_g_up" rect="458 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_g_down" rect="458 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_h_up" rect="528 285 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 2, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_h_down" rect="528 297 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 2, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<webpicture name="pic_a" rect="210 230 40 40" image="blank" imgrect="0 0 40 40" url="http://%s" param1="pic21"/>
+	<webpicture name="pic_s" rect="265 230 40 40" image="blank" imgrect="40 0 40 40" url="http://%s" param1="pic22"/>
+	<webpicture name="pic_d" rect="320 230 40 40" image="blank" imgrect="80 0 40 40" url="http://%s" param1="pic23"/>
+	<webpicture name="pic_f" rect="375 230 40 40" image="blank" imgrect="120 0 40 40" url="http://%s" param1="pic24"/>
+	<webpicture name="pic_g" rect="430 230 40 40" image="blank" imgrect="160 0 40 40" url="http://%s" param1="pic25"/>
+	<webpicture name="pic_h" rect="500 230 40 40" image="blank" imgrect="200 0 40 40" url="http://%s" param1="pic26"/>	
+	<checkbox name="check21" caption="" rect="240 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 1)"/>
+	<checkbox name="check22" caption="" rect="295 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 2)"/>
+	<checkbox name="check23" caption="" rect="350 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 3)"/>
+	<checkbox name="check24" caption="" rect="405 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 4)"/>
+	<checkbox name="check25" caption="" rect="460 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 5)"/>
+	<checkbox name="check26" caption="" rect="530 260 10 10" SelectScp="Interface.ChangeSkillUse(2, 6)"/>
+	<labelbox name="character3_box" rect="20 355 550 140"/>		
+	<text name="name3" caption="%s" param1="n3" fontname="itemlistboxoption_feso" rect="40 375 10 10" alignx="left" aligny="top"/>
+	<text name="job3" caption="%s" param1="j3" fontname="itemlistboxoption_feso" rect="40 395 10 10" alignx="left" aligny="top"/>
+	<text name="weapon3" caption="%s" param1="w3" fontname="sandyellow_12_ol" rect="70 420 10 10" alignx="left" aligny="top"/>
+	<text name="stance3" caption="%s" param1="s3" fontname="sandyellow_12_ol" rect="70 450 10 10" alignx="left" aligny="top"/>
+	<text name="time_z_text" caption="%s" param1="t31" fontname="white_13_ol" rect="210 445 10 10" alignx="left" aligny="top"/>
+	<text name="time_x_text" caption="%s" param1="t32" fontname="white_13_ol" rect="265 445 10 10" alignx="left" aligny="top"/>
+	<text name="time_c_text" caption="%s" param1="t33" fontname="white_13_ol" rect="320 445 10 10" alignx="left" aligny="top"/>
+	<text name="time_v_text" caption="%s" param1="t34" fontname="white_13_ol" rect="375 445 10 10" alignx="left" aligny="top"/>
+	<text name="time_b_text" caption="%s" param1="t35" fontname="white_13_ol" rect="430 445 10 10" alignx="left" aligny="top"/>
+	<text name="time_n_text" caption="%s" param1="t36" fontname="white_13_ol" rect="500 445 10 10" alignx="left" aligny="top"/>	
+	<imgbutton name="prev_weapon3" rect="40 415 50 28" img="skin\button.bmp" imgrect="0 287 24 24" LBtnUpScp="Interface.ChangeWeapon('prev', 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_weapon3" rect="160 415 50 28" img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeWeapon('next', 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="prev_stance3" rect="40 445 50 28" img="skin\button.bmp" imgrect="0 287 24 24"	LBtnUpScp="Interface.ChangeStance('prev', 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="next_stance3" rect="160 445 50 28" img="skin\button.bmp" imgrect="204 83 24 24" LBtnUpScp="Interface.ChangeStance('next', 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_z_up" rect="238 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_z_down" rect="238 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 1)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_x_up" rect="293 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_x_down" rect="293 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 2)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_c_up" rect="348 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_c_down" rect="348 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 3)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_v_up" rect="403 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_v_down" rect="403 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 4)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_b_up" rect="458 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_b_down" rect="458 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 5)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_n_up" rect="528 440 12 12" img="skin\button.bmp" imgrect="279 97 12 12" LBtnUpScp="Interface.ChangeTime('up', 3, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<imgbutton name="time_n_down" rect="528 452 12 12" img="skin\button.bmp" imgrect="279 136 12 12" LBtnUpScp="Interface.ChangeTime('down', 3, 6)" LBtnDownSE="sys_uibottonclick1.ogg"/>
+	<webpicture name="pic_z" rect="210 385 40 40" image="blank" imgrect="0 0 40 40" url="http://%s" param1="pic31"/>
+	<webpicture name="pic_x" rect="265 385 40 40" image="blank" imgrect="40 0 40 40" url="http://%s" param1="pic32"/>
+	<webpicture name="pic_c" rect="320 385 40 40" image="blank" imgrect="80 0 40 40" url="http://%s" param1="pic33"/>
+	<webpicture name="pic_v" rect="375 385 40 40" image="blank" imgrect="120 0 40 40" url="http://%s" param1="pic34"/>
+	<webpicture name="pic_b" rect="430 385 40 40" image="blank" imgrect="160 0 40 40" url="http://%s" param1="pic35"/>
+	<webpicture name="pic_n" rect="500 385 40 40" image="blank" imgrect="200 0 40 40" url="http://%s" param1="pic36"/>	
+	<checkbox name="check31" caption="" rect="240 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 1)"/>
+	<checkbox name="check32" caption="" rect="295 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 2)"/>
+	<checkbox name="check33" caption="" rect="350 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 3)"/>
+	<checkbox name="check34" caption="" rect="405 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 4)"/>
+	<checkbox name="check35" caption="" rect="460 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 5)"/>
+	<checkbox name="check36" caption="" rect="530 415 10 10" SelectScp="Interface.ChangeSkillUse(3, 6)"/>	
+	<button name="disable_all" caption="Очистить список скиллов" rect="20 500 200 24" LBtnUpScp="Interface.SwitchAll('on', 'skills')"/>
+	<button name="back" caption="Назад" rect="500 500 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>	
+	<tooltip name="disable_all_tip" parent="disable_all" caption="Очистить список скиллов для всех персонажей" fontname="sandyellow_12_ol" width="256"/>
+	<tooltip name="back_tip" parent="back" caption="Вернуться в главное меню" fontname="sandyellow_12_ol" width="256"/>
+</uiframe>

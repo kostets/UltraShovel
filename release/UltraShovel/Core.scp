@@ -1,0 +1,344 @@
+
+var SEP = ":";
+
+func GetAiActor(self)
+{
+	return GetTextByKey(nil, "GetAiActor" .. SEP .. tostring(self));
+}
+
+func ChangeTacticsAi(selfAi, tactics)
+{
+	return GetTextByKey(nil, "ChangeTacticsAi" .. SEP .. selfAi .. SEP .. tactics);
+}
+
+func GetSelfActor(selfAi)
+{
+	return GetTextByKey(nil, "GetSelfActor" .. SEP .. selfAi);
+}
+
+func GetSelfIndex(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfIndex" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetSelfHP(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfHP" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetSelfMaxHP(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfMaxHP" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetSelfSP(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfSP" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetSelfMaxSP(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfMaxSP" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetSelfStance(selfAi)
+{
+	var result = GetTextByKey(nil, "GetSelfStance" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetOriginalTS(selfAi)
+{
+	return GetTextByKey(nil, "GetOriginalTS" .. SEP .. selfAi);
+}
+
+func GetPrevTS(selfAi)
+{
+	return GetTextByKey(nil, "GetPrevTS" .. SEP .. selfAi);
+}
+
+func GetJobName(selfAi)
+{
+	return GetTextByKey(nil, "GetJobName" .. SEP .. selfAi);
+}
+
+func GetJobSkill(selfAi)
+{
+	var result = GetTextByKey(nil, "GetJobSkill" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func Hold(selfAi)
+{
+	return GetTextByKey(nil, "Hold" .. SEP .. selfAi);
+}
+
+func UnHold(selfAi)
+{
+	return GetTextByKey(nil, "UnHold" .. SEP .. selfAi);
+}
+
+func InstantHold(selfAi)
+{
+	return GetTextByKey(nil, "InstantHold" .. SEP .. selfAi);
+}
+
+func GetTarget(selfAi, name)
+{
+	return GetTextByKey(nil, "GetTarget" .. SEP .. selfAi .. SEP .. name);
+}
+
+func SetTarget(selfAi, target, name)
+{
+	return GetTextByKey(nil, "SetTarget" .. SEP .. selfAi .. SEP .. target .. SEP .. name);
+}
+
+func GetAiTarget(selfAi)
+{
+	return GetTextByKey(nil, "GetAiTarget" .. SEP .. selfAi);
+}
+
+func SetAiTarget(selfAi, target)
+{
+	return GetTextByKey(nil, "SetAiTarget" .. SEP .. selfAi .. SEP .. target);
+}
+
+func GetUserTarget(selfAi)
+{
+	return GetTextByKey(nil, "GetUserTarget" .. SEP .. selfAi);
+}
+
+func SetUserTarget(selfAi, target)
+{
+	return GetTextByKey(nil, "SetUserTarget" .. SEP .. selfAi .. SEP .. target);
+}
+
+func GetCounterTarget(selfAi)
+{
+	return GetTextByKey(nil, "GetCounterTarget" .. SEP .. selfAi);
+}
+
+func SetCounterTarget(selfAi, target)
+{
+	return GetTextByKey(nil, "SetCounterTarget" .. SEP .. selfAi .. SEP .. target);
+}
+
+func ClearAiTarget(selfAi)
+{
+	return GetTextByKey(nil, "ClearAiTarget" .. SEP .. selfAi);
+}
+
+func ClearUserTarget(selfAi)
+{
+	return GetTextByKey(nil, "ClearUserTarget" .. SEP .. selfAi);
+}
+
+func ClearCounterTarget(selfAi)
+{
+	return GetTextByKey(nil, "ClearCounterTarget" .. SEP .. selfAi);
+}
+
+func GetNearAtkableEnemy(selfAi, range)
+{
+	return GetTextByKey(nil, "GetNearAtkableEnemy" .. SEP .. selfAi .. SEP .. range);
+}
+
+func GetNearAtkableEnemyOnHold(selfAi, range)
+{
+	return GetTextByKey(nil, "GetNearAtkableEnemyOnHold" .. SEP .. selfAi .. SEP .. range);
+}
+
+func GetNeedHealFriend(selfAi, range, hpPercent)
+{
+	return GetTextByKey(nil, "GetNeedHealFriend" .. SEP .. selfAi .. SEP .. range .. SEP .. hpPercent);
+}
+
+func GetNearDeadFriend(selfAi, range)
+{
+	return GetTextByKey(nil, "GetNearDeadFriend" .. SEP .. selfAi .. SEP .. range);
+}
+
+func GetNearItem(selfAi, range)
+{
+	var result = GetTextByKey(nil, "GetNearItem" .. SEP .. selfAi .. SEP .. range);
+
+	return tonumber(result);
+}
+
+func GetActorAttackMe(selfAi)
+{
+	return GetTextByKey(nil, "GetActorAttackMe" .. SEP .. selfAi);
+}
+
+func GetAtkableActorAttackMe(selfAi)
+{
+	return GetTextByKey(nil, "GetAtkableActorAttackMe" .. SEP .. selfAi);
+}
+
+func Attack(selfAi, target)
+{
+	return GetTextByKey(nil, "Attack" .. SEP .. selfAi .. SEP .. target);
+}
+
+func UseSkill(selfAi, target, skillID)
+{
+	return GetTextByKey(nil, "UseSkill" .. SEP .. selfAi .. SEP .. target .. SEP .. skillID);
+}
+
+func UseSkillNone(selfAi, skillID)
+{
+	return GetTextByKey(nil, "UseSkillNone" .. SEP .. selfAi .. SEP .. skillID);
+}
+
+func PickItem(selfAi, item)
+{
+	return GetTextByKey(nil, "PickItem" .. SEP .. selfAi .. SEP .. item);
+}
+
+func KeepDestMoveTo(selfAi)
+{
+	return GetTextByKey(nil, "KeepDestMoveTo" .. SEP .. selfAi);
+}
+
+func AssaultDestMoveTo(selfAi)
+{
+	return GetTextByKey(nil, "AssaultDestMoveTo" .. SEP .. selfAi);
+}
+
+func HarvestDestMoveTo(selfAi)
+{
+	return GetTextByKey(nil, "HarvestDestMoveTo" .. SEP .. selfAi);
+}
+
+func IsNearFromMoveDestPosition(selfAi, range)
+{
+	return GetTextByKey(nil, "IsNearFromMoveDestPosition" .. SEP .. selfAi .. SEP .. range);
+}
+
+func IsNearFromKeepDestPosition(selfAi, range)
+{
+	return GetTextByKey(nil, "IsNearFromKeepDestPosition" .. SEP .. selfAi .. SEP .. range);
+}
+
+func IsNearFromAssaultDestPosition(selfAi, range)
+{
+	return GetTextByKey(nil, "IsNearFromAssaultDestPosition" .. SEP .. selfAi .. SEP .. range);
+}
+
+func IsNearFromHarvestDestPosition(selfAi, range)
+{
+	return GetTextByKey(nil, "IsNearFromHarvestDestPosition" .. SEP .. selfAi .. SEP .. range);
+}
+
+func IsLeader(selfAi)
+{
+	return GetTextByKey(nil, "IsLeader" .. SEP .. selfAi);
+}
+
+func IsMoving(selfAi)
+{
+	return GetTextByKey(nil, "IsMoving" .. SEP .. selfAi);
+}
+
+func IsSkillUsing(selfAi)
+{
+	return GetTextByKey(nil, "IsSkillUsing" .. SEP .. selfAi);
+}
+
+func IsAbleToAttack(selfAi)
+{
+	return GetTextByKey(nil, "IsAbleToAttack" .. SEP .. selfAi);
+}
+
+func IsTargetInMyAttackRange(selfAi, target)
+{
+	return GetTextByKey(nil, "IsTargetInMyAttackRange" .. SEP .. selfAi .. SEP .. target);
+}
+
+func IsTargetInMySkillRange(selfAi, target, skillID)
+{
+	return GetTextByKey(nil, "IsTargetInMySkillRange" .. SEP .. selfAi .. SEP .. target .. SEP .. skillID);
+}
+
+func IsDeadState(actor)
+{
+	return GetTextByKey(nil, "IsDeadState" .. SEP .. actor);
+}
+
+func IsDead(actor)
+{
+	return GetTextByKey(nil, "IsDead" .. SEP .. actor);
+}
+
+func IsKd(actor)
+{
+	return GetTextByKey(nil, "IsKd" .. SEP .. actor);
+}
+
+func IsExist(actor)
+{
+	return GetTextByKey(nil, "IsExist" .. SEP .. actor);
+}
+
+func IsExistItem(item)
+{
+	return GetTextByKey(nil, "IsExistItem" .. SEP .. item);
+}
+
+func GetPickItem(selfAi)
+{
+	var result = GetTextByKey(nil, "GetPickItem" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetMyAtkLayer(selfAi)
+{
+	var result = GetTextByKey(nil, "GetMyAtkLayer" .. SEP .. selfAi);
+
+	return tonumber(result);
+}
+
+func GetTargetDefLayer(actor)
+{
+	var result = GetTextByKey(nil, "GetTargetDefLayer" .. SEP .. actor);
+
+	return tonumber(result);
+}
+
+func GetTargetHP(actor)
+{
+	var result = GetTextByKey(nil, "GetTargetHP" .. SEP .. actor);
+
+	return tonumber(result);
+}
+
+func GetOption(self)
+{
+	return {
+		AssaultRange = 1500,
+		ClassID = 2,
+		ClassName = 'HEALER',
+		Heal = 90,
+		HoldRange = 700,
+		KeepRange = 1500,
+		KeepReturnRange = 2000,
+	};
+}
+
+func AiLog(x)
+{
+//	SysMsg(x);
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<uiframe name="UltraShovel : About [Ctrl+F9]" class="abouteng" x="0" y="0" width="700" height="240" moveable="true" align="center center">
+	<imgbutton name="CLOSE" rect="-7 7 15 15" img="\skin\button.bmp" imgrect="0 57 15 15" alignx="right" aligny="top"/>
+	<labelbox name="about_box" rect="20 45 660 140"/>	
+	
+	<text name="title1" caption="[Developer]:" fontname="itemlistboxoption_feso" rect="50 55 10 10" alignx="left" aligny="top"/>
+	<text name="title10" caption="[Ultra-Helper]:" fontname="itemlistboxoption_feso" rect="50 80 10 10" alignx="left" aligny="top"/>
+	<text name="title2" caption="[Web site]:" fontname="itemlistboxoption_feso" rect="50 105 10 10" alignx="left" aligny="top"/>
+	<text name="title3" caption="[Community]:" fontname="itemlistboxoption_feso" rect="50 130 10 10" alignx="left" aligny="top"/>
+	<text name="title4" caption="[Bug tracker]:" fontname="itemlistboxoption_feso" rect="50 155 10 10" alignx="left" aligny="top"/>
+	
+	<text name="title5" caption="EatingPeopleIsFun" fontname="white_13_ol" rect="150 55 10 10" alignx="left" aligny="top"/>
+	<text name="title9" caption="Dneeht" fontname="white_13_ol" rect="150 80 10 10" alignx="left" aligny="top"/>
+	<text name="title6" caption="http://shovel-box.net" fontname="white_13_ol" rect="150 105 10 10" alignx="left" aligny="top"/>
+	<text name="title7" caption="http://facebook.com/shovelbox" fontname="white_13_ol" rect="150 130 10 10" alignx="left" aligny="top"/>
+	<text name="title8" caption="http://shovel-box.net/BugReport" fontname="white_13_ol" rect="150 155 10 10" alignx="left" aligny="top"/>
+	
+	<button name="back" caption="Back" rect="380 200 70 24" LBtnUpScp="Interface.LoadWindow('menu')"/>		
+	<tooltip name="back_tip" parent="back" caption="Return to the main menu" fontname="sandyellow_12_ol" width="256"/>
+</uiframe>

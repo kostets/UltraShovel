@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!-- edited with XMLSpy v2006 U (http://www.altova.com) by 이정현 (EMBRACE) -->
+<Category Version="1">
+	<HotKey Name="<$>64219</>" Scp="QuickMove()" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64220</>" Scp="QuickAssault()" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64221</>" Scp="QuickHarvest()" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64222</>" Scp="QuickAttack()" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64223</>" Scp="AroundHarvest()" Key="SPACE" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64224</>" Scp='ChangeTactics("TS_HOLD")' Key="H" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64225</>" Scp='ChangeTactics("TS_HOLD")' Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>10792</>" Scp="Keep()" Key="E" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64226</>" Scp="Keep()" Key="SPACE" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64227</>" Scp="SelectAll()" Key="A" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64228</>" Scp="SelectMyPc(0)" Key="F1" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64229</>" Scp="SelectMyPc(1)" Key="F2" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64230</>" Scp="SelectMyPc(2)" Key="F3" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64231</>" Scp="ChangeStance(0)" Key="F5" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64232</>" Scp="ChangeStance(1)" Key="F6" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64233</>" Scp="ChangeStance(2)" Key="F7" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64234</>" Scp="ChangeStance(3)" Key="F8" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64235</>" Scp="ChangeStance(4)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64236</>" Scp="ChangeStance(0)" Key="NUM4" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64237</>" Scp="ChangeStance(1)" Key="NUM5" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64238</>" Scp="ChangeStance(2)" Key="NUM6" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64239</>" Scp="ChangeStance(3)" Key="NUM7" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64240</>" Scp="ChangeStance(4)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64241</>" Scp="SkillOnMyPc(0)" Key="NUM8" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64242</>" Scp="SkillOnMyPc(1)" Key="NUM9" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64243</>" Scp="SkillOnMyPc(2)" Key="NUM0" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64244</>" Scp="Call()" Key="F4" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64245</>" Scp="SetSquad(0)" Key="NUM1" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64246</>" Scp="SetSquad(1)" Key="NUM2" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64247</>" Scp="SetSquad(2)" Key="NUM3" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64248</>" Scp="SelectSquad(0)" Key="NUM1" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64249</>" Scp="SelectSquad(1)" Key="NUM2" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64250</>" Scp="SelectSquad(2)" Key="NUM3" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64251</>" Scp="SelectSquad(0)" Key="NUM1" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64252</>" Scp="SelectSquad(1)" Key="NUM2" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64253</>" Scp="SelectSquad(2)" Key="NUM3" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64254</>" Scp="Skill(0, 0)" Key="Q" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64255</>" Scp="Skill(0, 1)" Key="W" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64256</>" Scp="Skill(0, 2)" Key="E" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64257</>" Scp="Skill(0, 3)" Key="R" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64258</>" Scp="Skill(0, 4)" Key="T" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64259</>" Scp="Skill(0, 5)" Key="Y" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64260</>" Scp="UseItem(0,0)" Key="U" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64260</>" Scp="UseItem(0,1)" Key="I" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64261</>" Scp="Skill(1, 0)" Key="A" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64262</>" Scp="Skill(1, 1)" Key="S" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64263</>" Scp="Skill(1, 2)" Key="D" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64264</>" Scp="Skill(1, 3)" Key="F" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64265</>" Scp="Skill(1, 4)" Key="G" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64266</>" Scp="Skill(1, 5)" Key="H" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64267</>" Scp="UseItem(1,0)" Key="J" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64267</>" Scp="UseItem(1,1)" Key="K" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64268</>" Scp="Skill(2, 0)" Key="Z" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64269</>" Scp="Skill(2, 1)" Key="X" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64270</>" Scp="Skill(2, 2)" Key="C" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64271</>" Scp="Skill(2, 3)" Key="V" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64272</>" Scp="Skill(2, 4)" Key="B" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64273</>" Scp="Skill(2, 5)" Key="N" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64274</>" Scp="UseItem(2,0)" Key="M" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64274</>" Scp="UseItem(2,1)" Key="COMMA" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64275</>" Scp="SwitchSingleSelectMode()" Key="F9" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64276</>" Scp="GrowChatFrame()" Key="F10" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64277</>" Scp="ShrinkChatFrame()" Key="F11" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64278</>" Scp="ChatMacro(0)" Key="NUM4" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64279</>" Scp="ChatMacro(1)" Key="NUM5" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64280</>" Scp="ChatMacro(2)" Key="NUM6" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64281</>" Scp="ChatMacro(3)" Key="NUM7" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64282</>" Scp="ChatMacro(4)" Key="NUM8" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64283</>" Scp="ChatMacro(5)" Key="NUM9" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64284</>" Scp="ChatMacro(6)" Key="NUM0" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64285</>" Scp="ToggleUi()" Key="F" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64286</>" Scp='Toggle("jukebox")' Key="J" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64287</>" Scp='Toggle("quit")' Key="Q" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64288</>" Scp="UI_HOT_TOGGLE_BATTLE_UI()" Key="I" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64289</>" Scp="UI_HOT_TOGGLE_CHANNELSELECTOR()" Key="F2" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64290</>" Scp='Toggle("chatmacro")' Key="K" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64291</>" Scp='Toggle("commanderinfo")' Key="R" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64292</>" Scp="ToggleAchievement()" Key="L" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64293</>" Scp="PartyInfo()" Key="T" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64294</>" Scp="UI_HOT_TOGGLE_PARTYINFO()" Key="Y" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64295</>" Scp='Toggle("friendlist")' Key="B" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64296</>" Scp='Toggle("gameoption")' Key="O" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64297</>" Scp='Toggle("inventory")' Key="V" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64298</>" Scp='Toggle("cashinventory")' Key="F" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64299</>" Scp="ToggleMiniMap()" Key="M" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64300</>" Scp='Toggle("poselist")' Key="X" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64301</>" Scp="ToggleUICommand()" Key="U" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64302</>" Scp='Toggle("worldmap")' Key="W" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64303</>" Scp="UI_HOT_TOGGLE_SQUADINFO()" Key="D" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64304</>" Scp="UI_HOT_TOGGLE_STATUS_INVENTPORY()" Key="E" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64305</>" Scp="UI_HOT_TOGGLE_STANCESKILL()" Key="S" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64306</>" Scp="UI_HOT_TOGGLE_CHARBASEINFO()" Key="G" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64307</>" Scp="UI_HOT_TOGGLE_QUESTINFO()" Key="A" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64308</>" Scp="UI_TOGGLE_USERSHOP()" Key="N" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64309</>" Scp="UI_TOGGLE_FESOSHOP()" Key="N" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64310</>" Scp="ToggleAreaMap()" Key="Z" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64311</>" Scp='Toggle("helplist")' Key="H" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64312</>" Scp="ToggleChatEdit()" Key="C" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64313</>" Scp="ToggleTownWarp()" Key="F3" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64314</>" Scp='Toggle("warplist")' Key="R" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64315</>" Scp="UI_HOT_TOGGLE_GROUPINFO()" Key="G" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64316</>" Scp="UI_HOT_TOGGLE_SERVERBBS()" Key="S" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64317</>" Scp='Toggle("secretguard")' Key="D" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64318</>" Scp="UI_HOT_TOGGLE_PET()" Key="P" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>64319</>" Scp="OpenSecretGuardWaitListUI()" Key="L" UseAlt="YES" UseCtrl="NO" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>86589</>" Scp="OpenAndStartUserNavigationMode()" Key="Q" UseAlt="NO" UseCtrl="YES" UseShift="YES" OnEdit="YES"/>
+	<HotKey Name="<$>64321</>" Scp="UseCommonItem(0)" Key="N1" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64322</>" Scp="UseCommonItem(1)" Key="N2" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64323</>" Scp="UseCommonItem(2)" Key="N3" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64324</>" Scp="UseCommonItem(3)" Key="N4" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64325</>" Scp="UseCommonItem(4)" Key="N5" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64326</>" Scp="UseCommonItem(5)" Key="N6" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64327</>" Scp="UseCommonItem(6)" Key="N7" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64328</>" Scp="UseCommonItem(7)" Key="N8" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64329</>" Scp="UseCommonItem(8)" Key="N9" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64330</>" Scp="UseCommonItem(9)" Key="N/" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64331</>" Scp="UseCommonItem(10)" Key="N*" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64332</>" Scp="UseCommonItem(11)" Key="N-" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64333</>" Scp="PoseId(1)" Key="NUM1" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64334</>" Scp="PoseId(2)" Key="NUM2" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64335</>" Scp="PoseId(3)" Key="NUM3" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64336</>" Scp="PoseId(4)" Key="NUM4" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64337</>" Scp="PoseId(5)" Key="NUM5" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64338</>" Scp="PoseId(6)" Key="NUM6" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64339</>" Scp="PoseId(7)" Key="NUM7" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64340</>" Scp="PoseId(8)" Key="NUM8" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64341</>" Scp="PoseId(9)" Key="NUM9" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64342</>" Scp="PoseId(10)" Key="NUM0" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64343</>" Scp="PoseId(11)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64344</>" Scp="PoseId(12)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64345</>" Scp="PoseId(13)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64346</>" Scp="PoseId(14)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64347</>" Scp="PoseId(15)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64348</>" Scp="PoseId(16)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64349</>" Scp="PoseId(17)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64350</>" Scp="PoseId(18)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64351</>" Scp="PoseId(19)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64352</>" Scp="PoseId(20)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64353</>" Scp="PoseId(21)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64354</>" Scp="PoseId(22)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64355</>" Scp="PoseId(23)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64356</>" Scp="PoseId(24)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64357</>" Scp="PoseId(25)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64358</>" Scp="PoseId(26)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64359</>" Scp="PoseId(27)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64360</>" Scp="PoseId(28)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64361</>" Scp="PoseId(29)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64362</>" Scp="PoseId(30)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64363</>" Scp="PoseId(31)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64364</>" Scp="PoseId(32)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64365</>" Scp="PoseId(33)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64366</>" Scp="PoseId(34)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64367</>" Scp="PoseId(35)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64368</>" Scp="PoseId(36)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64369</>" Scp="PoseId(37)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64370</>" Scp="PoseId(38)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64371</>" Scp="PoseId(39)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64372</>" Scp="PoseId(40)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64373</>" Scp="PoseId(41)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64374</>" Scp="PoseId(42)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64375</>" Scp="PoseId(43)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64376</>" Scp="PoseId(44)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64377</>" Scp="PoseId(45)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64378</>" Scp="PoseId(46)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64379</>" Scp="PoseId(47)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64380</>" Scp="PoseId(48)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64381</>" Scp="PoseId(49)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64382</>" Scp="PoseId(50)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64383</>" Scp="PoseId(51)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64384</>" Scp="PoseId(52)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64385</>" Scp="PoseId(53)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64386</>" Scp="PoseId(54)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64387</>" Scp="PoseId(55)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64388</>" Scp="PoseId(56)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64389</>" Scp="PoseId(57)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64390</>" Scp="PoseId(58)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64391</>" Scp="PoseId(59)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64392</>" Scp="PoseId(60)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64393</>" Scp="PoseId(61)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64394</>" Scp="PoseId(62)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64395</>" Scp="PoseId(63)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64396</>" Scp="PoseId(64)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64397</>" Scp="PoseId(65)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64398</>" Scp="PoseId(66)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64399</>" Scp="PoseId(67)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64400</>" Scp="PoseId(68)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64401</>" Scp="PoseId(69)" Key="None" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64402</>" Scp='Toggle("help_cliquewar")' Key="Z" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="NO"/>
+	<HotKey Name="<$>64403</>" Scp='Toggle("farm")' Key="F" UseAlt="NO" UseCtrl="YES" UseShift="YES" OnEdit="YES"/>
+	<HotKey Name="<$>64404</>" Scp='Toggle("pioneer_info")' Key="M" UseAlt="NO" UseCtrl="YES" UseShift="YES" OnEdit="YES"/>
+	<HotKey Name="<$>81198</>" Scp='Toggle("commandermastery")' Key="T" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="<$>79143</>" Scp='UI_HOT_TOGGLE_ARTIFACT()' Key="F" UseAlt="YES" UseCtrl="YES" UseShift="NO" OnEdit="YES"/>
+	<HotKey Name="UltraShovel Load" Scp='loadfile("UltraShovel\ultra_shovel")("UltraShovel\main.cs")' Key="F12" UseAlt="NO" UseCtrl="NO" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open menu window" Scp='Interface.LoadWindow("menu")' Key="F1" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open skills window" Scp='Interface.LoadWindow("skills")' Key="F2" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open potions window" Scp='Interface.LoadWindow("potions")' Key="F3" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open alarms window" Scp='Interface.LoadWindow("alarms")' Key="F4" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open settings window" Scp='Interface.LoadWindow("settings")' Key="F5" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open items window" Scp='Interface.LoadWindow("items")' Key="F6" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open news window" Scp='Interface.LoadWindow("news")' Key="F7" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open addons window" Scp='Interface.LoadWindow("addons")' Key="F8" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Open about window" Scp='Interface.LoadWindow("about")' Key="F9" UseAlt="NO" UseCtrl="YES" UseShift="NO" OnEdit="YES" />
+	<HotKey Name="Change keep mode" Scp='Hotkeys.ChangeKeepMode()' Key="4" UseAlt="NO" UseCtrl="NO" UseShift="YES" OnEdit="YES" />
+</Category>
