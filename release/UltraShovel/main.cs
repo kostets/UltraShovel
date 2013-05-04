@@ -6,7 +6,7 @@ if (Shovel)
 else 
 {
 	Shovel = {
-		AIVersion = 		"Release 1.33", 
+		AIVersion = 		"Release 1.34", 
 		Name = 				"UltraShovel",
 		Commander = 		GetMyCommanderName(), 
 		Region = 			GetNation(), 

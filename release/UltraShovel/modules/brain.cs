@@ -1,7 +1,6 @@
 if (Brain){	Brain.Unload();	} 
 
 Brain = {
-	PotionsTime = 0,
 	AmmoTime = 0,
 	ReturnTime = 0,
 	ItemsTime = { 
@@ -79,17 +78,7 @@ Brain.AutoPick = func(Actor){
 }
 
 Brain.KnockdownProtect = func (Actor){
-	// if (IsKd(GetSelfActor(Actor.SelfAi)) == 'YES') {
-		// if (Shovel.IsDebug) SysMsg("[" .. Actor.Name .. "] - KnockDown");
-		// sleep(250);
-		// var i = 0;
-		// while (i < 5000 && IsKd(GetSelfActor(Actor.SelfAi)) == 'YES') {
-			// sleep(250);
-			// i = i + 250;
-		// }
-		// ChangeTacticsAi(Actor.SelfAi, "TS_KEEP");
-		// return true;
-	// } 		
+
 }
 
 Brain.AutoSkill = func(Actor){
@@ -201,8 +190,6 @@ Brain.UseNoTargetSkill = func (Actor, id, index) {
 
 Brain.AutoPotions = func(){
 	if (!Shovel.IsReady) return;
-	if (!Shovel.IsTime(Brain.PotionsTime, tonumber(Settings['PotionsUsageDelay']))) return;
-	Brain.PotionsTime = Shovel.Now;
 	
 	for(i = 1, Brain.GetCharsCount())
 	{
