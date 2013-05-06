@@ -340,5 +340,5 @@ func GetOption(self)
 
 func AiLog(x)
 {
-//	SysMsg(x);
+	//SysMsg(x);
 }
